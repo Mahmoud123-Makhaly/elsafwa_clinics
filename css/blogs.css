@@ -1,0 +1,113 @@
+/* start banner */
+.blogs-banner {
+  background-image: url(../images//about/Header.png);
+}
+.blogs-banner .nav_bar li a {
+  color: #fff !important;
+}
+.blogs-banner .nav_bar.sticky-top li a {
+  color: #000 !important;
+}
+.blogs-banner .nav_bar.sticky-top li.active a {
+  color: #fff !important;
+}
+
+.blogs-banner .content {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 50px;
+}
+@media (max-width: 440px) {
+  .blogs-banner .content {
+    top: 63%;
+  }
+  .blogs-banner .content .title-1 {
+    width: 250px;
+    text-align: center;
+  }
+}
+.blogs-banner .content .title-1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+/* start our blogs */
+.our-blogs {
+  padding: 100px 0 50px;
+}
+@media (max-width: 1200px) {
+  .our-blogs {
+    padding: 180px 0 50px;
+  }
+}
+.our-blogs .item .card {
+  background-color: #f9f9f9;
+  border: 0;
+  border-bottom: 2px solid #ddd;
+}
+.our-blogs .item .card-body .category {
+  text-transform: uppercase;
+  color: #1f1f45;
+  position: relative;
+  left: 10px;
+}
+.our-blogs .item .card-body .category::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 10px;
+  top: 50%;
+  background-color: #1f1f45;
+  right: 102%;
+  transform: translateY(-50%);
+}
+.our-blogs .item .card-body .category::after {
+  content: "";
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-bottom: 12px solid #f9f9f9;
+  border-right: 5px solid transparent;
+  border-left: 10px solid transparent;
+  top: 29%;
+  right: 100%;
+  transform: translateY(-50%);
+}
+.our-blogs .item .card-body .card-title {
+  color: #1f1f45;
+  text-transform: uppercase;
+}
+.our-blogs .item .card-body .card-text {
+  line-height: 1.8;
+  color: #a7a7a7;
+}
+.our-blogs .item .card-body .date {
+  color: #a7a7a7;
+  font-size: 14px;
+}
+.our-blogs .links a {
+  background-color: #f1f1f1;
+  color: #000;
+  text-transform: uppercase;
+  border-color: #f1f1f1;
+  font-size: 15px;
+}
+.our-blogs .links a i {
+  font-size: 12px;
+}
+.our-blogs .links button {
+  background-color: #ca8b36 !important;
+}
+.our-blogs .owl-theme .owl-dots .owl-dot span {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50% !important;
+  background-color: #ebebeb !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-blogs .owl-theme .owl-dots .owl-dot.active span {
+  background-color: #ca8b36 !important;
+}

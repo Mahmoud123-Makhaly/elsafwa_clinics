@@ -1,0 +1,53 @@
+/* start banner   */
+.services-banner {
+  background-image: url(../images//about/Header.png);
+}
+.services-banner .nav_bar li a {
+  color: #fff !important;
+}
+.services-banner .nav_bar.sticky-top li a {
+  color: #000 !important;
+}
+.services-banner .nav_bar.sticky-top li.active a {
+  color: #fff !important;
+}
+
+.services-banner .content {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 50px;
+}
+@media (max-width: 440px) {
+  .services-banner .content {
+    top: 63%;
+  }
+  .services-banner .content .title-1 {
+    width: 215px;
+  }
+}
+.services-banner .content .title-1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+/* start services section */
+.services {
+  padding: 160px 0 50px;
+}
+@media (min-width: 1200px) {
+  .services {
+    padding: 100px 0 50px;
+  }
+}
+.services .item-img img {
+  max-width: 100%;
+}
+.services .item-content h3 {
+  font-size: 2rem;
+  font-weight: 700rem;
+  color: #1f1f45;
+}
+.services .item-content p {
+  font-size: 17px;
+}

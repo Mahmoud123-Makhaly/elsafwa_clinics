@@ -1,0 +1,73 @@
+/* start banner */
+.specialties-banner {
+  background-image: url(../images//about/Header.png);
+}
+.specialties-banner .nav_bar li a {
+  color: #fff !important;
+}
+.specialties-banner .nav_bar.sticky-top li a {
+  color: #000 !important;
+}
+.specialties-banner .nav_bar.sticky-top li.active a {
+  color: #fff !important;
+}
+
+.specialties-banner .content {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 50px;
+}
+@media (max-width: 440px) {
+  .specialties-banner .content {
+    top: 63%;
+  }
+  .specialties-banner .content .title-1 {
+    width: 250px;
+    text-align: center;
+  }
+}
+.specialties-banner .content .title-1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+/* start our values */
+.our-specialties {
+  padding: 100px 0 50px;
+}
+@media screen and (max-width: 1200px) {
+  .our-specialties {
+    padding: 170px 0 50px;
+  }
+}
+.our-specialties .title {
+  text-align: center;
+  color: #1f1f45;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+.our-specialties .item {
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 200px;
+  transition: 0.3s all ease;
+}
+.our-specialties .item img {
+  width: 86px;
+  height: 86px;
+  object-fit: cover;
+}
+.our-specialties .item h3 {
+  font-size: 1.3rem;
+}
+
+.our-specialties .item:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transform: scale(1.001);
+}

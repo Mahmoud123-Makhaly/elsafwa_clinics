@@ -1,0 +1,78 @@
+/* start banner   */
+.doctors-banner {
+  background-image: url(../images//about/Header.png);
+}
+.doctors-banner .nav_bar li a {
+  color: #fff !important;
+}
+.doctors-banner .nav_bar.sticky-top li a {
+  color: #000 !important;
+}
+.doctors-banner .nav_bar.sticky-top li.active a {
+  color: #fff !important;
+}
+
+.doctors-banner .content {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 50px;
+}
+@media (max-width: 440px) {
+  .doctors-banner .content {
+    top: 63%;
+  }
+  .doctors-banner .content .title-1 {
+    width: 215px;
+  }
+}
+.doctors-banner .content .title-1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+/* start doctors */
+.available_doctors {
+  padding: 160px 0 50px;
+}
+@media (min-width: 1200px) {
+  .doctors {
+    padding: 100px 0 50px;
+  }
+}
+.available_doctors .section_top h2 {
+  font-weight: 600;
+  color: #1f1f45;
+}
+.available_doctors .section_top h1 {
+  font-weight: 700;
+  color: #1f1f45;
+}
+.available_doctors .doctors-filters .item {
+  background-color: #f2f2f2;
+  color: #7f7f7f;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.available_doctors .doctors-filters .item:hover,
+.available_doctors .doctors-filters .item.active {
+  background-color: #1f1f45;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .available_doctors .row .col-xl {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .available_doctors .doctors {
+    padding: 0px 0 50px !important;
+  }
+}
+.doctors .doctor-card img {
+  height: 400px;
+  object-fit: cover;
+}

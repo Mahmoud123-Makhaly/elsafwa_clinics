@@ -1,0 +1,132 @@
+/* start banner   */
+.contact-us-banner {
+  background-image: url(../images//about/Header.png);
+}
+.contact-us-banner .nav_bar li a {
+  color: #fff !important;
+}
+.contact-us-banner .nav_bar.sticky-top li a {
+  color: #000 !important;
+}
+.contact-us-banner .nav_bar.sticky-top li.active a {
+  color: #fff !important;
+}
+
+.contact-us-banner .content {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 50px;
+}
+@media (max-width: 440px) {
+  .contact-us-banner .content {
+    top: 63%;
+  }
+  .contact-us-banner .content .title-1 {
+    width: 215px;
+  }
+}
+.contact-us-banner .content .title-1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+/* start our-contacts  */
+.our-contacts {
+  padding: 100px 0px 50px;
+}
+.our-contacts h3 {
+  font-weight: 700;
+}
+.our-contacts .item {
+  background-color: #f3f3f3;
+  display: flex;
+
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+  border-radius: 10px;
+  padding-inline-start: 6em;
+}
+@media (max-width: 1200px) {
+  .our-contacts .item {
+    padding-inline-start: 0em;
+    justify-content: center;
+  }
+}
+.our-contacts .item img {
+  width: 40px;
+  height: 40px;
+}
+.our-contacts .item h4 {
+  font-size: 1.3rem;
+}
+@media (max-width: 1200px) {
+  .our-contacts {
+    padding: 180px 0px 50px;
+  }
+}
+/* start contact us */
+.contact-us .contact-wrapper {
+  position: relative; /* important for ::before positioning */
+  background-image: url(../images/contatc-us/Emergency.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.contact-us .contact-wrapper::before {
+  content: "";
+  position: absolute; /* position it over the container */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit; /* reuse same background */
+  background-size: inherit;
+  background-position: inherit;
+  filter: blur(5px); /* adjust blur intensity */
+  transform: scale(1.05); /* prevent edge clipping */
+  z-index: -1; /* sit behind actual content */
+}
+
+.contact-wrapper h2 {
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-weight: 600;
+}
+.contact-wrapper form label {
+  font-weight: 500;
+  color: #1f1f45;
+  margin-bottom: 5px;
+}
+.contact-wrapper .form-control,
+.contact-wrapper .form-select {
+  border: 0;
+  box-shadow: none;
+  padding: 15px;
+  border-radius: 10px;
+}
+.contact-us .item .btn {
+  background-color: #fff;
+  color: #1f1f45;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  font-size: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: all 0.3s ease;
+}
+.contact-us .item .btn:hover {
+  background-color: #d1882c;
+  color: #fff;
+}
