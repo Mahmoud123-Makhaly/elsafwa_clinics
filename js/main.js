@@ -42,8 +42,8 @@ $(".departments-carousel").owlCarousel({
 });
 $(".doctors-carousel").owlCarousel({
   loop: true,
-  margin: 50,
-  nav: true,
+  margin: 20,
+  nav: false,
   responsive: {
     0: {
       items: 1,

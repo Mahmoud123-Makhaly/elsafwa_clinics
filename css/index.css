@@ -263,6 +263,8 @@ a {
 }
 /* start departments  */
 .departments .inner {
+  position: relative;
+  overflow: hidden;
   height: 550px;
 }
 
@@ -271,18 +273,28 @@ a {
   object-fit: cover;
   height: 100%;
 }
-.departments .inner.first .overlay {
+
+.departments .inner .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(36, 65, 76, 1), rgba(36, 65, 76, 0));
+  transition: opacity 0.3s ease;
+}
+.departments .inner .overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   background: linear-gradient(
     to top,
-    rgba(178, 135, 80, 1),
-    rgba(178, 135, 80, 0)
+    rgba(232, 155, 63, 0.8),
+    rgba(232, 155, 63, 0)
   );
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-.departments .inner.second .overlay {
-  background: linear-gradient(to top, rgba(36, 65, 76, 1), rgba(36, 65, 76, 0));
-}
-.departments .inner.third .overlay {
-  background: linear-gradient(to top, rgba(53, 68, 89, 1), rgba(53, 68, 89, 0));
+
+.departments .item:hover .inner .overlay::after {
+  opacity: 1;
 }
 .departments .inner .content {
   position: absolute;
@@ -292,6 +304,7 @@ a {
   color: #ffffff;
   font-size: 2rem;
   font-weight: 600;
+  z-index: 2;
 }
 .departments .owl-theme .owl-dots .owl-dot span {
   width: 15px;
@@ -314,13 +327,21 @@ a {
 .doctors p {
   font-weight: 500;
 }
+.doctors-container {
+  width: 90%;
+  margin: auto;
+}
 .doctor-card {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
+
 .doctor-card img {
   width: 100%;
+  height: 400px;
+  object-fit: cover;
+  background-color: #fff;
 }
 .doctor-card .desc {
   background: #1f1f45;
@@ -348,11 +369,37 @@ a {
 .doctors .owl-theme .owl-dots .owl-dot.active span {
   background-color: #d1882c;
 }
+@media (max-width: 575px) {
+  .doctors .owl-theme .owl-dots .owl-dot {
+    display: none;
+  }
+  .doctors .owl-carousel .owl-dots.disabled,
+  .doctors .owl-carousel .owl-nav.disabled {
+    display: block;
+  }
+  .doctors .owl-prev,
+  .doctors .owl-next {
+    width: 40px;
+    height: 40px;
+    background-color: #ce893a !important;
+
+    border-radius: 50% !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .doctors .owl-prev span,
+  .doctors .owl-next span {
+    color: #fff;
+    font-size: 20px;
+  }
+}
 .doctors .img-overlay {
   position: absolute;
   min-height: 400px;
   width: 100%;
-  overflow: hidden;
+
   bottom: 1rem;
 }
 
@@ -361,10 +408,8 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: url(../images/home/doctors-bg.png) center/cover no-repeat;
-  filter: blur(20px); /* adjust blur intensity */
-  transform: scale(1.05); /* prevent edge clipping */
-  z-index: 0;
+
+  background: url(../images/about/Header.png) center/cover no-repeat;
 }
 /* start testimonials */
 
@@ -431,11 +476,36 @@ a {
   z-index: -999999999999;
   transform: rotate(180deg);
 }
-@media (max-width: 1700px) {
+
+@media (max-width: 1770px) {
+  .testimonials .quotation-right {
+    right: -4rem !important;
+  }
+  .testimonials .quotation-left {
+    left: -4rem !important;
+  }
+}
+@media (max-width: 1560px) {
+  .testimonials .quotation-right {
+    right: -10rem !important;
+  }
+  .testimonials .quotation-left {
+    left: -10rem !important;
+  }
+}
+@media (max-width: 1200px) {
   .testimonials .quotation-right,
   .testimonials .quotation-left {
     display: none;
   }
+}
+.testimonials .owl-theme .owl-dots .owl-dot {
+  border: none;
+  outline: 0;
+}
+.testimonials-carousel .item {
+  background-color: rgb(244, 244, 244) !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /* start find-us */
 
