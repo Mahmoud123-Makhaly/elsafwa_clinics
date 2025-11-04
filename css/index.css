@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 ul {
   list-style: none;
@@ -49,6 +49,9 @@ a {
   color: #000;
   font-weight: 500;
 }
+.nav_bar .active {
+  margin-top: 3px;
+}
 .nav_bar .active a {
   background-color: #1f1f45;
   color: #fff;
@@ -73,7 +76,10 @@ a {
 .banner .logo {
   top: 7em;
 }
-
+.banner .logo img {
+  width: 80%;
+  object-fit: cover;
+}
 .banner .content {
   top: 50%;
   transform: translateY(-50%);
@@ -201,6 +207,11 @@ a {
   font-size: 37px;
   font-weight: 600;
 }
+@media (min-width: 1200px) {
+  .specialties .inner h3 {
+    font-size: 1.5rem;
+  }
+}
 .specialties .inner.first {
   border: 0;
 }
@@ -270,8 +281,8 @@ a {
 
 .departments .inner img {
   width: 100%;
-  object-fit: cover;
-  height: 100%;
+object-fit: fill;
+  height: 550px;
 }
 
 .departments .inner .overlay {
