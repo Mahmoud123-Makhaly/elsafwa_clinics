@@ -92,112 +92,113 @@ window.addEventListener("scroll", function () {
     navbar.style.background = "transparent";
   }
 });
+// doctors filter logic 
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Store selected values
-  const selectedValues = {
-    department: null,
-    doctor: null,
-    date: null,
-    location: null,
-  };
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Store selected values
+//   const selectedValues = {
+//     department: null,
+//     doctor: null,
+//     date: null,
+//     location: null,
+//   };
 
-  // Get DOM elements
-  const searchBtn = document.getElementById("searchBtn");
-  const userInfoForm = document.getElementById("userInfoForm");
-  const appointmentForm = document.getElementById("appointmentForm");
-  const summaryDetails = document.getElementById("summaryDetails");
+//   // Get DOM elements
+//   const searchBtn = document.getElementById("searchBtn");
+//   const userInfoForm = document.getElementById("userInfoForm");
+//   const appointmentForm = document.getElementById("appointmentForm");
+//   const summaryDetails = document.getElementById("summaryDetails");
 
-  // Set up dropdown functionality
-  document.querySelectorAll(".dropdown-item").forEach((item) => {
-    item.addEventListener("click", function (e) {
-      e.preventDefault();
+//   // Set up dropdown functionality
+//   document.querySelectorAll(".dropdown-item").forEach((item) => {
+//     item.addEventListener("click", function (e) {
+//       e.preventDefault();
 
-      // Get the parent dropdown
-      const dropdown = this.closest(".dropdown");
-      const button = dropdown.querySelector(".dropdown-toggle");
+//       // Get the parent dropdown
+//       const dropdown = this.closest(".dropdown");
+//       const button = dropdown.querySelector(".dropdown-toggle");
 
-      // Update button text
-      button.textContent = this.textContent;
+//       // Update button text
+//       button.textContent = this.textContent;
 
-      // Store the selected value
-      const dropdownId = button.id;
-      const value = this.getAttribute("data-value");
-      const displayText = this.textContent;
+//       // Store the selected value
+//       const dropdownId = button.id;
+//       const value = this.getAttribute("data-value");
+//       const displayText = this.textContent;
 
-      if (dropdownId === "departmentDropdown") {
-        selectedValues.department = { value, displayText };
-      } else if (dropdownId === "doctorDropdown") {
-        selectedValues.doctor = { value, displayText };
-      } else if (dropdownId === "dateDropdown") {
-        selectedValues.date = { value, displayText };
-      } else if (dropdownId === "locationDropdown") {
-        selectedValues.location = { value, displayText };
-      }
-    });
-  });
+//       if (dropdownId === "departmentDropdown") {
+//         selectedValues.department = { value, displayText };
+//       } else if (dropdownId === "doctorDropdown") {
+//         selectedValues.doctor = { value, displayText };
+//       } else if (dropdownId === "dateDropdown") {
+//         selectedValues.date = { value, displayText };
+//       } else if (dropdownId === "locationDropdown") {
+//         selectedValues.location = { value, displayText };
+//       }
+//     });
+//   });
 
-  // Search button click handler
-  searchBtn.addEventListener("click", function () {
-    // Check if all dropdowns have been selected
-    const allSelected = Object.values(selectedValues).every(
-      (value) => value !== null
-    );
+//   // Search button click handler
+//   searchBtn.addEventListener("click", function () {
+//     // Check if all dropdowns have been selected
+//     const allSelected = Object.values(selectedValues).every(
+//       (value) => value !== null
+//     );
 
-    if (allSelected) {
-      // Update the summary
-      updateSummary();
+//     if (allSelected) {
+//       // Update the summary
+//       updateSummary();
 
-      // Show the user info form
-      userInfoForm.style.display = "block";
+//       // Show the user info form
+//       userInfoForm.style.display = "block";
 
-      // Scroll to the form
-      userInfoForm.scrollIntoView({ behavior: "smooth" });
-    } else {
-      alert("Please select all options before searching.");
-    }
-  });
+//       // Scroll to the form
+//       userInfoForm.scrollIntoView({ behavior: "smooth" });
+//     } else {
+//       alert("Please select all options before searching.");
+//     }
+//   });
 
-  // Update appointment summary
-  function updateSummary() {
-    summaryDetails.innerHTML = `
+//   // Update appointment summary
+//   function updateSummary() {
+//     summaryDetails.innerHTML = `
                      
-                `;
-  }
+//                 `;
+//   }
 
-  // Form submission handler
-  appointmentForm.addEventListener("submit", function (e) {
-    e.preventDefault();
+//   // Form submission handler
+//   appointmentForm.addEventListener("submit", function (e) {
+//     e.preventDefault();
 
-    // Get form values
-    const userName = document.getElementById("userName").value;
-    const userPhone = document.getElementById("userPhone").value;
+//     // Get form values
+//     const userName = document.getElementById("userName").value;
+//     const userPhone = document.getElementById("userPhone").value;
 
-    // In a real application, you would send this data to a server
-    // For now, we'll just show a success message
-    Swal.fire({
-      title: "Good job!",
-      text: "Submission successfully",
-      icon: "success",
-    });
+//     // In a real application, you would send this data to a server
+//     // For now, we'll just show a success message
+//     Swal.fire({
+//       title: "Good job!",
+//       text: "Submission successfully",
+//       icon: "success",
+//     });
 
-    // Reset the form
-    appointmentForm.reset();
-    userInfoForm.style.display = "none";
+//     // Reset the form
+//     appointmentForm.reset();
+//     userInfoForm.style.display = "none";
 
-    // Reset dropdowns
-    document.querySelectorAll(".dropdown-toggle").forEach((button) => {
-      if (button.id === "departmentDropdown")
-        button.textContent = "Select Department";
-      if (button.id === "doctorDropdown") button.textContent = "Select Doctor";
-      if (button.id === "dateDropdown") button.textContent = "Select Date";
-      if (button.id === "locationDropdown")
-        button.textContent = "Select Location";
-    });
+//     // Reset dropdowns
+//     document.querySelectorAll(".dropdown-toggle").forEach((button) => {
+//       if (button.id === "departmentDropdown")
+//         button.textContent = "Select Department";
+//       if (button.id === "doctorDropdown") button.textContent = "Select Doctor";
+//       if (button.id === "dateDropdown") button.textContent = "Select Date";
+//       if (button.id === "locationDropdown")
+//         button.textContent = "Select Location";
+//     });
 
-    // Reset selected values
-    Object.keys(selectedValues).forEach((key) => {
-      selectedValues[key] = null;
-    });
-  });
-});
+//     // Reset selected values
+//     Object.keys(selectedValues).forEach((key) => {
+//       selectedValues[key] = null;
+//     });
+//   });
+// });

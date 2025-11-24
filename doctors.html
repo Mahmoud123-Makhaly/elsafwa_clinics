@@ -108,7 +108,7 @@
           <div class="row g-2 mb-3">
             <div class="col-lg-10">
               <div class="row g-2">
-                <div class="col">
+                <div class="col-12 col-lg-4">
                   <div class="dropdown">
                     <button
                       class="btn btn-secondary dropdown-toggle w-100"
@@ -120,15 +120,53 @@
                       Select Specialty
                     </button>
                     <ul
-                      class="dropdown-menu w-100"
+                      class="dropdown-menu"
+                      style="width: fit-content"
                       aria-labelledby="departmentDropdown"
                     >
                       <li>
                         <a
                           class="dropdown-item"
                           href="#"
-                          data-value="cardiology"
-                          >Cardiology</a
+                          data-value="GeneralSurgery"
+                          >General Surgery</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="InternalMedicineGastroenterology"
+                          >Internal Medicine & Gastroenterology</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="ENT"
+                          >ENT</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="ChestAllergy"
+                          >Chest & Allergy</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="OrthopedicsJoints"
+                          >Orthopedics & Joints</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="Rheumatology"
+                          >Rheumatology</a
                         >
                       </li>
                       <li>
@@ -136,10 +174,44 @@
                           >Neurology</a
                         >
                       </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="VascularSurgery"
+                          >Vascular Surgery</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="OB-GYN"
+                          >OB/GYN</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="Psychology"
+                          >Psychology</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="Cardiology"
+                          >Cardiology</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="Urology"
+                          >Urology</a
+                        >
+                      </li>
                     </ul>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-lg-4">
                   <div class="dropdown">
                     <button
                       class="btn btn-secondary dropdown-toggle w-100"
@@ -151,88 +223,44 @@
                       Select Doctor
                     </button>
                     <ul
-                      class="dropdown-menu w-100"
+                      class="dropdown-menu"
+                      style="width: fit-content"
                       aria-labelledby="doctorDropdown"
                     >
-                      <li>
-                        <a class="dropdown-item" href="#" data-value="dr-smith"
-                          >Dr. Smith</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-value="dr-johnson"
-                          >Dr. Johnson</a
-                        >
-                      </li>
+                      <!-- Doctor options will be populated dynamically -->
                     </ul>
                   </div>
                 </div>
-                <div class="col">
+
+                <div class="col-12 col-lg-4">
                   <div class="dropdown">
                     <button
                       class="btn btn-secondary dropdown-toggle w-100"
                       type="button"
-                      id="dateDropdown"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Select Date
-                    </button>
-                    <ul
-                      class="dropdown-menu w-100"
-                      aria-labelledby="dateDropdown"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-value="2023-06-15"
-                          >June 15, 2023</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-value="2023-06-16"
-                          >June 16, 2023</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="dropdown">
-                    <button
-                      class="btn btn-secondary dropdown-toggle w-100"
-                      type="button"
-                      id="locationDropdown"
+                      id="timeDropdown"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       Select Time
                     </button>
                     <ul
-                      class="dropdown-menu w-100"
-                      aria-labelledby="locationDropdown"
+                      class="dropdown-menu"
+                      style="width: fit-content; z-index: 9999"
+                      aria-labelledby="timeDropdown"
                     >
                       <li>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-value="main-hospital"
-                          >10AM</a
+                        <a class="dropdown-item" href="#" data-value="morning"
+                          >Morning (8:00 AM - 12:00 PM)</a
                         >
                       </li>
                       <li>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-value="north-clinic"
-                          >12AM</a
+                        <a class="dropdown-item" href="#" data-value="afternoon"
+                          >Afternoon (12:00 PM - 5:00 PM)</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="evening"
+                          >Evening (5:00 PM - 10:00 PM)</a
                         >
                       </li>
                     </ul>
@@ -356,80 +384,32 @@
             <div class="doctors-container">
               <div class="row g-4 mixitup-container" id="doctors-list">
                 <!-- Doctor cards with MixItUp classes -->
-                <!-- general surgery data ***************************** -->
-
-                <!-- ENT data******************************* -->
-                <div class="col-md-6 col-lg-3 mix ENT">
+                <!-- General Surgery data -->
+                <div
+                  class="col-md-6 col-lg-3 mix GeneralSurgery"
+                  data-doctor="Prof. Dr. Hany Eissa"
+                  data-schedule="evening"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
-                      alt="Dr. Rafik El-Kady"
+                      alt="Prof. Dr. Hany Eissa"
                     />
                     <div class="desc position-absolute py-3">
-                      <h2>Dr. Rafik El-Kady</h2>
-                      <p>Consultant Otorhinolaryngology (ENT)</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mix ENT">
-                  <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Mohamed Hossam"
-                    />
-                    <div class="desc position-absolute py-3">
-                      <h2>Dr. Mohamed Hossam</h2>
-                      <p>Consultant Otorhinolaryngology (ENT)</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mix ENT">
-                  <div class="doctor-card position-relative">
-                    <img src="images/doctors/doctor.png" alt="Dr. Rowan" />
-                    <div class="desc position-absolute py-3">
-                      <h2>Dr. Rowan</h2>
-                      <p>Consultant Otorhinolaryngology (ENT)</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mix ENT">
-                  <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Mohamed El-Aggag"
-                    />
-                    <div class="desc position-absolute py-3">
-                      <h2>Dr. Mohamed El-Aggag</h2>
-                      <p>Consultant Otorhinolaryngology (ENT)</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Chest & Allergy data******************************* -->
-                <div class="col-md-6 col-lg-3 mix ChestAllergy">
-                  <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Eman Abdel Salam"
-                    />
-                    <div class="desc position-absolute py-3">
-                      <h2>Dr. Eman Abdel Salam</h2>
-                      <p>Consultant Pulmonary Diseases</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mix ChestAllergy">
-                  <div class="doctor-card position-relative">
-                    <img src="images/doctors/doctor.png" alt="Dr. Karim Elhamy" />
-                    <div class="desc position-absolute py-3">
-                      <h2>Dr. Karim Elhamy</h2>
-                      <p>Specialist Pulmonary <br />Diseases</p>
+                      <h2>Prof. Dr. Hany Eissa</h2>
+                      <p>
+                        Consultant General Surgery, Oncology, Laparoscopic
+                        Surgery, and Bariatric Surgery
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                <!-- Internal Medicine & Gastroenterology data******************************* -->
+                <!-- Internal Medicine & Gastroenterology data -->
                 <div
                   class="col-md-6 col-lg-3 mix InternalMedicineGastroenterology"
+                  data-doctor="Prof. Dr. Taha Abdel Hamid"
+                  data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
                     <img
@@ -445,8 +425,11 @@
                     </div>
                   </div>
                 </div>
+
                 <div
                   class="col-md-6 col-lg-3 mix InternalMedicineGastroenterology"
+                  data-doctor="Dr. Hisham Mahmoud"
+                  data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
                     <img
@@ -462,8 +445,11 @@
                     </div>
                   </div>
                 </div>
+
                 <div
                   class="col-md-6 col-lg-3 mix InternalMedicineGastroenterology"
+                  data-doctor="Dr. Essam Shalaby"
+                  data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
                     <img
@@ -479,8 +465,11 @@
                     </div>
                   </div>
                 </div>
+
                 <div
                   class="col-md-6 col-lg-3 mix InternalMedicineGastroenterology"
+                  data-doctor="Dr. Mahmoud Hassan"
+                  data-schedule="afternoon"
                 >
                   <div class="doctor-card position-relative">
                     <img
@@ -489,15 +478,123 @@
                     />
                     <div class="desc position-absolute py-3">
                       <h2>Dr. Mahmoud Hassan</h2>
-                      <br />
                       <p>General Internal Medicine Specialist</p>
                     </div>
                   </div>
                 </div>
-                <!-- Orthopedics & Joints data *****************************-->
-                <div class="col-md-6 col-lg-3 mix OrthopedicsJoints">
+
+                <!-- ENT data -->
+                <div
+                  class="col-md-6 col-lg-3 mix ENT"
+                  data-doctor="Dr. Rafik El-Kady"
+                  data-schedule="evening"
+                >
                   <div class="doctor-card position-relative">
-                    <img src="images/doctors/doctor.png" alt="Dr. Alaa Shebeeb" />
+                    <img
+                      src="images/doctors/doctor.png"
+                      alt="Dr. Rafik El-Kady"
+                    />
+                    <div class="desc position-absolute py-3">
+                      <h2>Dr. Rafik El-Kady</h2>
+                      <p>Consultant Otorhinolaryngology (ENT)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-6 col-lg-3 mix ENT"
+                  data-doctor="Dr. Mohamed Hossam"
+                  data-schedule="afternoon,evening"
+                >
+                  <div class="doctor-card position-relative">
+                    <img
+                      src="images/doctors/doctor.png"
+                      alt="Dr. Mohamed Hossam"
+                    />
+                    <div class="desc position-absolute py-3">
+                      <h2>Dr. Mohamed Hossam</h2>
+                      <p>Consultant Otorhinolaryngology (ENT)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-6 col-lg-3 mix ENT"
+                  data-doctor="Dr. Rowan"
+                  data-schedule="afternoon"
+                >
+                  <div class="doctor-card position-relative">
+                    <img src="images/doctors/doctor.png" alt="Dr. Rowan" />
+                    <div class="desc position-absolute py-3">
+                      <h2>Dr. Rowan</h2>
+                      <p>Consultant Otorhinolaryngology (ENT)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-6 col-lg-3 mix ENT"
+                  data-doctor="Dr. Mohamed El-Aggag"
+                  data-schedule="evening"
+                >
+                  <div class="doctor-card position-relative">
+                    <img
+                      src="images/doctors/doctor.png"
+                      alt="Dr. Mohamed El-Aggag"
+                    />
+                    <div class="desc position-absolute py-3">
+                      <h2>Dr. Mohamed El-Aggag</h2>
+                      <p>Consultant Otorhinolaryngology (ENT)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Chest & Allergy data -->
+                <div
+                  class="col-md-6 col-lg-3 mix ChestAllergy"
+                  data-doctor="Dr. Eman Abdel Salam"
+                  data-schedule="evening"
+                >
+                  <div class="doctor-card position-relative">
+                    <img
+                      src="images/doctors/doctor.png"
+                      alt="Dr. Eman Abdel Salam"
+                    />
+                    <div class="desc position-absolute py-3">
+                      <h2>Dr. Eman Abdel Salam</h2>
+                      <p>Consultant Pulmonary Diseases</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-6 col-lg-3 mix ChestAllergy"
+                  data-doctor="Dr. Karim Elhamy"
+                  data-schedule="evening"
+                >
+                  <div class="doctor-card position-relative">
+                    <img
+                      src="images/doctors/doctor.png"
+                      alt="Dr. Karim Elhamy"
+                    />
+                    <div class="desc position-absolute py-3">
+                      <h2>Dr. Karim Elhamy</h2>
+                      <p>Specialist Pulmonary Diseases</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Orthopedics & Joints data -->
+                <div
+                  class="col-md-6 col-lg-3 mix OrthopedicsJoints"
+                  data-doctor="Dr. Alaa Shebeeb"
+                  data-schedule="evening"
+                >
+                  <div class="doctor-card position-relative">
+                    <img
+                      src="images/doctors/doctor.png"
+                      alt="Dr. Alaa Shebeeb"
+                    />
                     <div class="desc position-absolute py-3">
                       <h2>Dr. Alaa Shebeeb</h2>
                       <p>
@@ -506,7 +603,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mix OrthopedicsJoints">
+
+                <div
+                  class="col-md-6 col-lg-3 mix OrthopedicsJoints"
+                  data-doctor="Dr. Mohamed Ghazi"
+                  data-schedule="afternoon"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
@@ -520,8 +622,13 @@
                     </div>
                   </div>
                 </div>
-                <!-- Rheumatology data ***************************** -->
-                <div class="col-md-6 col-lg-3 mix Rheumatology">
+
+                <!-- Rheumatology data -->
+                <div
+                  class="col-md-6 col-lg-3 mix Rheumatology"
+                  data-doctor="Prof. Dr. Naglaa Ali"
+                  data-schedule="appointment"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
@@ -534,52 +641,64 @@
                   </div>
                 </div>
 
-                <!-- neurology data ***************************** -->
-                <div class="col-md-6 col-lg-3 mix neurology">
+                <!-- Neurology data -->
+                <div
+                  class="col-md-6 col-lg-3 mix neurology"
+                  data-doctor="Dr. Walid Attia"
+                  data-schedule="evening"
+                >
                   <div class="doctor-card position-relative">
-                    <img src="images/doctors/doctor.png" alt="Dr. Walid Attia" />
+                    <img
+                      src="images/doctors/doctor.png"
+                      alt="Dr. Walid Attia"
+                    />
                     <div class="desc position-absolute py-3">
                       <h2>Dr. Walid Attia</h2>
                       <p>Consultant Neurology</p>
                     </div>
                   </div>
                 </div>
-                <!-- General Surgery data ***************************** -->
-                <div class="col-md-6 col-lg-3 mix GeneralSurgery">
+
+                <!-- OB-GYN data -->
+                <div
+                  class="col-md-6 col-lg-3 mix OB-GYN"
+                  data-doctor="Dr. Hisham Morsi"
+                  data-schedule="evening"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
-                      alt="Prof. Dr. Hany Eissa"
+                      alt="Dr. Hisham Morsi"
                     />
-                    <div class="desc position-absolute py-3">
-                      <h2>Prof. Dr. Hany Eissa</h2>
-                      <p>
-                        Consultant General Surgery, Oncology, Laparoscopic
-                        Surgery, and Bariatric Surgery
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- OB-GYN data ***************************** -->
-                <div class="col-md-6 col-lg-3 mix OB-GYN">
-                  <div class="doctor-card position-relative">
-                    <img src="images/doctors/doctor.png" alt="Dr. Hisham Morsi" />
                     <div class="desc position-absolute py-3">
                       <h2>Dr. Hisham Morsi</h2>
                       <p>Consultant Obstetrics and Gynecology</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mix OB-GYN">
+
+                <div
+                  class="col-md-6 col-lg-3 mix OB-GYN"
+                  data-doctor="Dr. Afaf Shaheen"
+                  data-schedule="evening"
+                >
                   <div class="doctor-card position-relative">
-                    <img src="images/doctors/doctor.png" alt="Dr. Afaf Shaheen" />
+                    <img
+                      src="images/doctors/doctor.png"
+                      alt="Dr. Afaf Shaheen"
+                    />
                     <div class="desc position-absolute py-3">
                       <h2>Dr. Afaf Shaheen</h2>
                       <p>Consultant Obstetrics and Gynecology</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mix OB-GYN">
+
+                <div
+                  class="col-md-6 col-lg-3 mix OB-GYN"
+                  data-doctor="Dr. Nahed Mohamed"
+                  data-schedule="afternoon"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
@@ -591,7 +710,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mix OB-GYN">
+
+                <div
+                  class="col-md-6 col-lg-3 mix OB-GYN"
+                  data-doctor="Dr. Hassan Abdel Kader"
+                  data-schedule="evening"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
@@ -603,8 +727,13 @@
                     </div>
                   </div>
                 </div>
-                <!-- Psychology data ***************************** -->
-                <div class="col-md-6 col-lg-3 mix Psychology">
+
+                <!-- Psychology data -->
+                <div
+                  class="col-md-6 col-lg-3 mix Psychology"
+                  data-doctor="Dr. Ahmed El-Nahhas"
+                  data-schedule="evening"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
@@ -612,14 +741,16 @@
                     />
                     <div class="desc position-absolute py-3">
                       <h2>Dr. Ahmed El-Nahhas</h2>
-                      <p>
-                        Consultant <br />Psychiatry and Addiction
-                        <br />Treatment
-                      </p>
+                      <p>Consultant Psychiatry and Addiction Treatment</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mix Psychology">
+
+                <div
+                  class="col-md-6 col-lg-3 mix Psychology"
+                  data-doctor="Dr. Amira Shaheen"
+                  data-schedule="afternoon"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
@@ -627,14 +758,16 @@
                     />
                     <div class="desc position-absolute py-3">
                       <h2>Dr. Amira Shaheen</h2>
-                      <p>
-                        Professor of <br />Psychiatry and Behavior
-                        <br />Modification
-                      </p>
+                      <p>Professor of Psychiatry and Behavior Modification</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mix Psychology">
+
+                <div
+                  class="col-md-6 col-lg-3 mix Psychology"
+                  data-doctor="Dr. Azza Abdel Wahab"
+                  data-schedule="morning"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
@@ -649,8 +782,13 @@
                     </div>
                   </div>
                 </div>
-                <!-- Cardiology data ***************************** -->
-                <div class="col-md-6 col-lg-3 mix Cardiology">
+
+                <!-- Cardiology data -->
+                <div
+                  class="col-md-6 col-lg-3 mix Cardiology"
+                  data-doctor="Dr. Abdel Rahman Metwally"
+                  data-schedule="evening"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
@@ -662,7 +800,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mix Cardiology">
+
+                <div
+                  class="col-md-6 col-lg-3 mix Cardiology"
+                  data-doctor="Dr. Mohamed Nabil"
+                  data-schedule="afternoon"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
@@ -674,18 +817,30 @@
                     </div>
                   </div>
                 </div>
-                <!-- Urology data ***************************** -->
-                <div class="col-md-6 col-lg-3 mix Urology">
+
+                <!-- Urology data -->
+                <div
+                  class="col-md-6 col-lg-3 mix Urology"
+                  data-doctor="Dr. Ihab Raafat"
+                  data-schedule="evening"
+                >
                   <div class="doctor-card position-relative">
-                    <img src="images/doctors/doctor.png" alt="Dr. Ihab Raafat" />
+                    <img
+                      src="images/doctors/doctor.png"
+                      alt="Dr. Ihab Raafat"
+                    />
                     <div class="desc position-absolute py-3">
                       <h2>Dr. Ihab Raafat</h2>
-                      <br />
-                      <p>Consultant <br />Urology</p>
+                      <p>Consultant Urology</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mix Urology">
+
+                <div
+                  class="col-md-6 col-lg-3 mix Urology"
+                  data-doctor="Dr. Ashraf Othman"
+                  data-schedule="afternoon"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
@@ -693,12 +848,16 @@
                     />
                     <div class="desc position-absolute py-3">
                       <h2>Dr. Ashraf Othman</h2>
-                      <br />
-                      <p>Consultant <br />Urology</p>
+                      <p>Consultant Urology</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mix Urology">
+
+                <div
+                  class="col-md-6 col-lg-3 mix Urology"
+                  data-doctor="Dr. Ahmed Abdullah"
+                  data-schedule="evening"
+                >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"

@@ -144,6 +144,7 @@ a {
   padding-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
+  overflow: hidden;
 }
 .filters .btn:focus {
   box-shadow: none;
@@ -281,7 +282,7 @@ a {
 
 .departments .inner img {
   width: 100%;
-object-fit: fill;
+  object-fit: fill;
   height: 550px;
 }
 
