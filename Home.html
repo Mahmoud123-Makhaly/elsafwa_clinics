@@ -98,100 +98,218 @@
       </div>
       <!-- start filters -->
     
-        
-        <div class="filters">
-            <div class="filters-container p-4">
-                
-                 <div class="row g-2 mb-3">
-<div class="col-lg-10">
-   <div class="row g-2">
-      <div class="col">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="departmentDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                              Select Specialty 
-                            </button>
-                            <ul class="dropdown-menu w-100" aria-labelledby="departmentDropdown">
-                                <li><a class="dropdown-item" href="#" data-value="cardiology">Cardiology</a></li>
-                                <li><a class="dropdown-item" href="#" data-value="neurology">Neurology</a></li>
-                       
-                      
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="doctorDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                             Select Doctor 
-                            </button>
-                            <ul class="dropdown-menu w-100" aria-labelledby="doctorDropdown">
-                                <li><a class="dropdown-item" href="#" data-value="dr-smith">Dr. Smith</a></li>
-                                <li><a class="dropdown-item" href="#" data-value="dr-johnson">Dr. Johnson</a></li>
-                       
-                            
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dateDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                Select Date
-                            </button>
-                            <ul class="dropdown-menu w-100" aria-labelledby="dateDropdown">
-                                <li><a class="dropdown-item" href="#" data-value="2023-06-15">June 15, 2023</a></li>
-                                <li><a class="dropdown-item" href="#" data-value="2023-06-16">June 16, 2023</a></li>
-                        
-                                
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="locationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                               Select Time 
-                            </button>
-                            <ul class="dropdown-menu w-100" aria-labelledby="locationDropdown">
-                                <li><a class="dropdown-item" href="#" data-value="main-hospital">10AM</a></li>
-                                <li><a class="dropdown-item" href="#" data-value="north-clinic">12AM</a></li>
-                               
-                              
-                            </ul>
-                        </div>
-                    </div>
-   </div>
-</div>
-                       <div class="col-lg-2">
-                        <button class="btn search w-100" id="searchBtn">Search</button>
-                    </div>
-                 </div>
-                 
-                    
-                    <!-- User Info Form - Now inside the filters container -->
-                    <div class="col-12">
-                        <div class="user-info-form" id="userInfoForm">
-                            <div class="appointment-summary">
-                         
-                                <div id="summaryDetails"></div>
-                            </div>
-                    
-                            <form id="appointmentForm">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <label for="userName" class="form-label">Full Name</label>
-                                        <input type="text" class="form-control" id="userName" placeholder="Enter your full name" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="userPhone" class="form-label">Phone Number</label>
-                                        <input type="tel" class="form-control" id="userPhone" placeholder="Enter your phone number" required>
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <button type="submit" class="btn submit-btn w-100">Submit  </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+       <!-- start filters -->
+      <div class="filters">
+        <div class="filters-container p-4">
+          <div class="row g-2 mb-3">
+            <div class="col-lg-10">
+              <div class="row g-2">
+                <div class="col-12 col-lg-4">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-secondary dropdown-toggle w-100"
+                      type="button"
+                      id="departmentDropdown"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Select Specialty
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      style="width: fit-content"
+                      aria-labelledby="departmentDropdown"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="GeneralSurgery"
+                          >General Surgery</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="InternalMedicineGastroenterology"
+                          >Internal Medicine & Gastroenterology</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="ENT"
+                          >ENT</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="ChestAllergy"
+                          >Chest & Allergy</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="OrthopedicsJoints"
+                          >Orthopedics & Joints</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="Rheumatology"
+                          >Rheumatology</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="neurology"
+                          >Neurology</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="VascularSurgery"
+                          >Vascular Surgery</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="OB-GYN"
+                          >OB/GYN</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="Psychology"
+                          >Psychology</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="Cardiology"
+                          >Cardiology</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="Urology"
+                          >Urology</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="col-12 col-lg-4">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-secondary dropdown-toggle w-100"
+                      type="button"
+                      id="doctorDropdown"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Select Doctor
+                    </button>
+                    <ul
+                      class="dropdown-menu w-100"
+                      aria-labelledby="doctorDropdown"
+                    >
+                      <!-- Doctor options will be populated dynamically -->
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-secondary dropdown-toggle w-100"
+                      type="button"
+                      id="timeDropdown"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Select Time
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      style="width: fit-content; z-index: 9999"
+                      aria-labelledby="timeDropdown"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="morning"
+                          >Morning (8:00 AM - 12:00 PM)</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="afternoon"
+                          >Afternoon (12:00 PM - 5:00 PM)</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="evening"
+                          >Evening (5:00 PM - 10:00 PM)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="col-lg-2">
+              <button class="btn search w-100" id="searchBtn">Search</button>
+            </div>
+          </div>
+
+          <!-- User Info Form - Now inside the filters container -->
+          <div class="col-12">
+            <div class="user-info-form" id="userInfoForm">
+              <div class="appointment-summary">
+                <div id="summaryDetails"></div>
+              </div>
+
+              <form id="appointmentForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="userName" class="form-label">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="userName"
+                      placeholder="Enter your full name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="userPhone" class="form-label"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="userPhone"
+                      placeholder="Enter your phone number"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 mt-3">
+                    <button type="submit" class="btn submit-btn w-100">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
         </div>
   
     </div>
@@ -837,6 +955,6 @@ Urology
     <script src="js/owl.carousel.min.js"></script>  
      <script src="js/sweetalert2@11.js"></script>
     <script src="js/main.js"></script>
- 
+ <script src="./js/filter.js"></script>
   </body>
 </html>

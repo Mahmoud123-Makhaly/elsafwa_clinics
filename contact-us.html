@@ -109,7 +109,7 @@
           <div class="row g-2 mb-3">
             <div class="col-lg-10">
               <div class="row g-2">
-                <div class="col">
+                <div class="col-12 col-lg-4">
                   <div class="dropdown">
                     <button
                       class="btn btn-secondary dropdown-toggle w-100"
@@ -121,15 +121,53 @@
                       Select Specialty
                     </button>
                     <ul
-                      class="dropdown-menu w-100"
+                      class="dropdown-menu"
+                      style="width: fit-content"
                       aria-labelledby="departmentDropdown"
                     >
                       <li>
                         <a
                           class="dropdown-item"
                           href="#"
-                          data-value="cardiology"
-                          >Cardiology</a
+                          data-value="GeneralSurgery"
+                          >General Surgery</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="InternalMedicineGastroenterology"
+                          >Internal Medicine & Gastroenterology</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="ENT"
+                          >ENT</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="ChestAllergy"
+                          >Chest & Allergy</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="OrthopedicsJoints"
+                          >Orthopedics & Joints</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="Rheumatology"
+                          >Rheumatology</a
                         >
                       </li>
                       <li>
@@ -137,10 +175,44 @@
                           >Neurology</a
                         >
                       </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="VascularSurgery"
+                          >Vascular Surgery</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="OB-GYN"
+                          >OB/GYN</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="Psychology"
+                          >Psychology</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="Cardiology"
+                          >Cardiology</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="Urology"
+                          >Urology</a
+                        >
+                      </li>
                     </ul>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-lg-4">
                   <div class="dropdown">
                     <button
                       class="btn btn-secondary dropdown-toggle w-100"
@@ -155,85 +227,40 @@
                       class="dropdown-menu w-100"
                       aria-labelledby="doctorDropdown"
                     >
-                      <li>
-                        <a class="dropdown-item" href="#" data-value="dr-smith"
-                          >Dr. Smith</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-value="dr-johnson"
-                          >Dr. Johnson</a
-                        >
-                      </li>
+                      <!-- Doctor options will be populated dynamically -->
                     </ul>
                   </div>
                 </div>
-                <div class="col">
+
+                <div class="col-12 col-lg-4">
                   <div class="dropdown">
                     <button
                       class="btn btn-secondary dropdown-toggle w-100"
                       type="button"
-                      id="dateDropdown"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Select Date
-                    </button>
-                    <ul
-                      class="dropdown-menu w-100"
-                      aria-labelledby="dateDropdown"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-value="2023-06-15"
-                          >June 15, 2023</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-value="2023-06-16"
-                          >June 16, 2023</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="dropdown">
-                    <button
-                      class="btn btn-secondary dropdown-toggle w-100"
-                      type="button"
-                      id="locationDropdown"
+                      id="timeDropdown"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       Select Time
                     </button>
                     <ul
-                      class="dropdown-menu w-100"
-                      aria-labelledby="locationDropdown"
+                      class="dropdown-menu"
+                      style="width: fit-content; z-index: 9999"
+                      aria-labelledby="timeDropdown"
                     >
                       <li>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-value="main-hospital"
-                          >10AM</a
+                        <a class="dropdown-item" href="#" data-value="morning"
+                          >Morning (8:00 AM - 12:00 PM)</a
                         >
                       </li>
                       <li>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-value="north-clinic"
-                          >12AM</a
+                        <a class="dropdown-item" href="#" data-value="afternoon"
+                          >Afternoon (12:00 PM - 5:00 PM)</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" data-value="evening"
+                          >Evening (5:00 PM - 10:00 PM)</a
                         >
                       </li>
                     </ul>
@@ -502,5 +529,6 @@
     <script src="js/sweetalert2@11.js"></script>
     <script src="js/main.js"></script>
     <script src="js/contact-us.js"></script>
+    <script src="js/filter.js"></script>
   </body>
 </html>

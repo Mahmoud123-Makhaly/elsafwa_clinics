@@ -151,6 +151,7 @@ a {
 }
 .filters .dropdown-menu.show {
   width: 100%;
+  background-color: #fff;
 }
 .filters .btn.search {
   background-color: #ce893a;
