@@ -68,8 +68,8 @@ const translations = {
   name: isArabic ? "الاسم" : "Name",
 };
 
-// Complete Doctor schedules database
 const doctorSchedules = {
+  // General Surgery
   "Prof. Dr. Hany Eissa": [
     {
       day: isArabic ? "السبت - الخميس" : "Saturday - Thursday",
@@ -77,6 +77,8 @@ const doctorSchedules = {
       period: "evening",
     },
   ],
+
+  // Internal Medicine & Gastroenterology
   "Prof. Dr. Taha Abdel Hamid": [
     {
       day: isArabic ? "الأحد – الثلاثاء" : "Sunday – Tuesday",
@@ -89,7 +91,7 @@ const doctorSchedules = {
       day: isArabic
         ? "السبت – الاثنين – الأربعاء"
         : "Saturday – Monday – Wednesday",
-      time: "7:00 PM – 10:00 PM",
+      time: "7:00 PM – 9:00 PM",
       period: "evening",
     },
   ],
@@ -109,6 +111,8 @@ const doctorSchedules = {
       period: "afternoon",
     },
   ],
+
+  // ENT
   "Dr. Rafik El-Kady": [
     {
       day: isArabic
@@ -144,6 +148,8 @@ const doctorSchedules = {
       period: "evening",
     },
   ],
+
+  // Chest & Allergy
   "Dr. Eman Abdel Salam": [
     {
       day: isArabic
@@ -162,6 +168,8 @@ const doctorSchedules = {
       period: "evening",
     },
   ],
+
+  // Orthopedics & Joints
   "Dr. Alaa Shebeeb": [
     {
       day: isArabic ? "السبت – الخميس" : "Saturday – Thursday",
@@ -176,6 +184,8 @@ const doctorSchedules = {
       period: "afternoon",
     },
   ],
+
+  // Rheumatology & Immunological Diseases
   "Prof. Dr. Naglaa Ali": [
     {
       day: isArabic ? "السبت – الثلاثاء" : "Saturday – Tuesday",
@@ -183,119 +193,300 @@ const doctorSchedules = {
       period: "appointment",
     },
   ],
+
+  // Neurology
   "Dr. Walid Attia": [
     {
-      day: isArabic ? "السبت - الخميس" : "Saturday - Thursday",
-      time: "6:00 PM - 9:00 PM",
-      period: "evening",
+      day: isArabic ? "السبت - الأربعاء" : "Saturday - Wednesday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
+
+  // Vascular Surgery
+  "Dr. Ihab Abdel Aziz": [
+    {
+      day: isArabic ? "السبت - الخميس" : "Saturday - Thursday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
+    },
+  ],
+
+  // OB/GYN
   "Dr. Hisham Morsi": [
     {
-      day: isArabic ? "السبت - الأربعاء" : "Saturday - Wednesday",
-      time: "5:00 PM - 8:00 PM",
-      period: "evening",
+      day: isArabic ? "الأحد - الأربعاء" : "Sunday - Wednesday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Afaf Shaheen": [
     {
-      day: isArabic ? "الأحد - الخميس" : "Sunday - Thursday",
-      time: "6:00 PM - 9:00 PM",
-      period: "evening",
+      day: isArabic ? "الخميس - السبت" : "Thursday - Saturday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Nahed Mohamed": [
     {
-      day: isArabic ? "الاثنين - الجمعة" : "Monday - Friday",
-      time: "1:00 PM - 4:00 PM",
-      period: "afternoon",
+      day: isArabic ? "الأحد - الأربعاء" : "Sunday - Wednesday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Hassan Abdel Kader": [
     {
-      day: isArabic ? "السبت - الخميس" : "Saturday - Thursday",
-      time: "7:00 PM - 10:00 PM",
-      period: "evening",
+      day: isArabic ? "الاثنين - الأربعاء" : "Monday - Wednesday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
+
+  // Psychology
   "Dr. Ahmed El-Nahhas": [
     {
-      day: isArabic ? "الأحد - الخميس" : "Sunday - Thursday",
-      time: "5:00 PM - 8:00 PM",
-      period: "evening",
+      day: isArabic ? "الأحد – الثلاثاء" : "Sunday – Tuesday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Amira Shaheen": [
     {
-      day: isArabic ? "الاثنين - الجمعة" : "Monday - Friday",
-      time: "12:00 PM - 3:00 PM",
-      period: "afternoon",
+      day: isArabic ? "السبت – الأربعاء" : "Saturday – Wednesday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Azza Abdel Wahab": [
     {
-      day: isArabic ? "السبت - الأربعاء" : "Saturday - Wednesday",
-      time: "9:00 AM - 12:00 PM",
-      period: "morning",
+      day: isArabic
+        ? "الأحد – الثلاثاء – الخميس"
+        : "Sunday – Tuesday – Thursday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
+
+  // Cardiology & Vascular Diseases
   "Dr. Abdel Rahman Metwally": [
     {
-      day: isArabic ? "السبت - الخميس" : "Saturday - Thursday",
-      time: "6:00 PM - 9:00 PM",
-      period: "evening",
+      day: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Mohamed Nabil": [
     {
-      day: isArabic ? "الأحد - الخميس" : "Sunday - Thursday",
-      time: "1:00 PM - 4:00 PM",
-      period: "afternoon",
+      day: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
+
+  // Urology
   "Dr. Ihab Raafat": [
     {
-      day: isArabic ? "السبت - الأربعاء" : "Saturday - Wednesday",
-      time: "5:00 PM - 8:00 PM",
-      period: "evening",
+      day: isArabic
+        ? "الاثنين – الخميس – الجمعة"
+        : "Monday – Thursday – Friday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Ashraf Othman": [
     {
-      day: isArabic ? "الاثنين - الجمعة" : "Monday - Friday",
-      time: "12:00 PM - 3:00 PM",
+      day: isArabic ? "الأحد" : "Sunday",
+      time: "5:00 PM – 7:00 PM",
+      period: "evening",
+    },
+    {
+      day: isArabic ? "الخميس" : "Thursday",
+      time: "4:00 PM – 6:00 PM",
       period: "afternoon",
     },
   ],
   "Dr. Ahmed Abdullah": [
     {
-      day: isArabic ? "الأحد - الخميس" : "Sunday - Thursday",
-      time: "6:00 PM - 9:00 PM",
+      day: isArabic ? "الاثنين – الخميس" : "Monday – Thursday",
+      time: "5:00 PM – 7:00 PM",
+      period: "evening",
+    },
+  ],
+
+  // Clinical Nutrition
+  "Dr. Shereen Eissa": [
+    {
+      day: isArabic
+        ? "الأحد – الثلاثاء – الخميس"
+        : "Sunday – Tuesday – Thursday",
+      time: "4:00 PM – 7:00 PM",
+      period: "afternoon",
+    },
+  ],
+
+  // Dermatology & Andrology
+  "Dr. Saad Mounir": [
+    {
+      day: isArabic ? "السبت - الأربعاء" : "Saturday - Wednesday",
+      time: "8:00 PM – 10:00 PM",
+      period: "evening",
+    },
+  ],
+  "Dr. Haitham Sirag": [
+    {
+      day: isArabic ? "السبت - الخميس" : "Saturday - Thursday",
+      time: "7:00 PM – 9:00 PM",
       period: "evening",
     },
   ],
 };
 
-// Complete Specialty mapping
+// Updated Specialty to specialty value mapping with Arabic names
+// Updated Specialty to specialty value mapping with Arabic names
 const specialtyMap = {
-  "General Surgery": { value: "GeneralSurgery", ar: "جراحة عامة" },
+  "General Surgery": {
+    value: "GeneralSurgery",
+    ar: "جراحة عامة",
+  },
   "Internal Medicine & Gastroenterology": {
     value: "InternalMedicineGastroenterology",
     ar: "الباطنة والجهاز الهضمي",
   },
-  ENT: { value: "ENT", ar: "أنف وأذن وحنجرة" },
-  "Chest & Allergy": { value: "ChestAllergy", ar: "صدر وحساسية" },
-  "Orthopedics & Joints": { value: "OrthopedicsJoints", ar: "عظام ومفاصل" },
-  Rheumatology: { value: "Rheumatology", ar: "روماتيزم" },
-  Neurology: { value: "neurology", ar: "أعصاب" },
-  "Vascular Surgery": { value: "VascularSurgery", ar: "جراحة الأوعية الدموية" },
-  "OB/GYN": { value: "OB-GYN", ar: "نساء وتوليد" },
-  Psychology: { value: "Psychology", ar: "طب نفسي" },
-  Cardiology: { value: "Cardiology", ar: "قلب وأوعية دموية" },
-  Urology: { value: "Urology", ar: "مسالك بولية" },
+  ENT: {
+    value: "ENT",
+    ar: "أنف وأذن وحنجرة",
+  },
+  "Chest & Allergy": {
+    value: "ChestAllergy",
+    ar: "صدر وحساسية",
+  },
+  "Orthopedics & Joints": {
+    value: "OrthopedicsJoints",
+    ar: "عظام ومفاصل",
+  },
+  "Rheumatology & Immunological Diseases": {
+    // UPDATED
+    value: "Rheumatology",
+    ar: "روماتيزم وأمراض المناعة",
+  },
+  Neurology: {
+    value: "Neurology",
+    ar: "أعصاب",
+  },
+  "Vascular Surgery": {
+    value: "VascularSurgery",
+    ar: "جراحة الأوعية الدموية",
+  },
+  "OB/GYN": {
+    value: "OB-GYN",
+    ar: "نساء وتوليد",
+  },
+  Psychology: {
+    value: "Psychology",
+    ar: "طب نفسي",
+  },
+  "Cardiology & Vascular Diseases": {
+    // UPDATED
+    value: "Cardiology",
+    ar: "قلب وأوعية دموية",
+  },
+  Urology: {
+    value: "Urology",
+    ar: "مسالك بولية",
+  },
+  "Clinical Nutrition": {
+    value: "ClinicalNutrition",
+    ar: "تغذية علاجية",
+  },
+  "Dermatology & Andrology": {
+    value: "DermatologyAndrology",
+    ar: "جلدية وتناسلية",
+  },
 };
 
 // Helper functions
+// Get doctors by specialty - UPDATED VERSION
+function getDoctorsBySpecialty(specialty) {
+  const specialtyDoctors = {
+    GeneralSurgery: [
+      { name: "Prof. Dr. Hany Eissa", specialty: "GeneralSurgery" },
+    ],
+    InternalMedicineGastroenterology: [
+      {
+        name: "Prof. Dr. Taha Abdel Hamid",
+        specialty: "InternalMedicineGastroenterology",
+      },
+      {
+        name: "Dr. Hisham Mahmoud",
+        specialty: "InternalMedicineGastroenterology",
+      },
+      {
+        name: "Dr. Essam Shalaby",
+        specialty: "InternalMedicineGastroenterology",
+      },
+      {
+        name: "Dr. Mahmoud Hassan",
+        specialty: "InternalMedicineGastroenterology",
+      },
+    ],
+    ENT: [
+      { name: "Dr. Rafik El-Kady", specialty: "ENT" },
+      { name: "Dr. Mohamed Hossam", specialty: "ENT" },
+      { name: "Dr. Rowan", specialty: "ENT" },
+      { name: "Dr. Mohamed El-Aggag", specialty: "ENT" },
+    ],
+    ChestAllergy: [
+      { name: "Dr. Eman Abdel Salam", specialty: "ChestAllergy" },
+      { name: "Dr. Karim Elhamy", specialty: "ChestAllergy" },
+    ],
+    OrthopedicsJoints: [
+      { name: "Dr. Alaa Shebeeb", specialty: "OrthopedicsJoints" },
+      { name: "Dr. Mohamed Ghazi", specialty: "OrthopedicsJoints" },
+    ],
+    Rheumatology: [{ name: "Prof. Dr. Naglaa Ali", specialty: "Rheumatology" }],
+    neurology: [{ name: "Dr. Walid Attia", specialty: "neurology" }],
+    VascularSurgery: [
+      // ADD THIS MISSING SPECIALTY
+      { name: "Dr. Ihab Abdel Aziz", specialty: "VascularSurgery" },
+    ],
+    "OB-GYN": [
+      { name: "Dr. Hisham Morsi", specialty: "OB-GYN" },
+      { name: "Dr. Afaf Shaheen", specialty: "OB-GYN" },
+      { name: "Dr. Nahed Mohamed", specialty: "OB-GYN" },
+      { name: "Dr. Hassan Abdel Kader", specialty: "OB-GYN" },
+    ],
+    Psychology: [
+      { name: "Dr. Ahmed El-Nahhas", specialty: "Psychology" },
+      { name: "Dr. Amira Shaheen", specialty: "Psychology" },
+      { name: "Dr. Azza Abdel Wahab", specialty: "Psychology" },
+    ],
+    Cardiology: [
+      { name: "Dr. Abdel Rahman Metwally", specialty: "Cardiology" },
+      { name: "Dr. Mohamed Nabil", specialty: "Cardiology" },
+    ],
+    Urology: [
+      { name: "Dr. Ihab Raafat", specialty: "Urology" },
+      { name: "Dr. Ashraf Othman", specialty: "Urology" },
+      { name: "Dr. Ahmed Abdullah", specialty: "Urology" },
+    ],
+    // ADD THESE NEW SPECIALTIES:
+    ClinicalNutrition: [
+      { name: "Dr. Shereen Eissa", specialty: "ClinicalNutrition" },
+    ],
+    DermatologyAndrology: [
+      { name: "Dr. Saad Mounir", specialty: "DermatologyAndrology" },
+      { name: "Dr. Haitham Sirag", specialty: "DermatologyAndrology" },
+    ],
+  };
+
+  if (!specialty) {
+    // Return all doctors if no specialty selected
+    return Object.values(specialtyDoctors).flat();
+  }
+
+  return specialtyDoctors[specialty] || [];
+}
+
 function getSpecialtyDisplayName(key) {
   if (!specialtyMap[key]) return key;
   return isArabic ? specialtyMap[key].ar : key;
@@ -311,6 +502,8 @@ function findSpecialtyByValue(value) {
     (key) => specialtyMap[key].value === value
   );
 }
+
+
 
 // Initialize when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
@@ -354,13 +547,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Populate and handle doctor dropdown
+  // Remove the entire duplicate getDoctorsBySpecialty function (lines 534-598)
+  // And make sure the updateDoctorDropdown function uses the correct one
+
+  // Populate and handle doctor dropdown
   function updateDoctorDropdown(specialty) {
     const doctorDropdownMenu = document.querySelector(
       "#doctorDropdown + .dropdown-menu"
     );
     doctorDropdownMenu.innerHTML = "";
 
-    // Get all doctors for the selected specialty
+    // Get all doctors for the selected specialty - THIS NOW USES THE CORRECT FUNCTION
     const doctors = getDoctorsBySpecialty(specialty);
 
     const doctorNames = new Set();
@@ -400,78 +597,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
-
   // Get doctors by specialty
-  function getDoctorsBySpecialty(specialty) {
-    const specialtyDoctors = {
-      GeneralSurgery: [
-        { name: "Prof. Dr. Hany Eissa", specialty: "GeneralSurgery" },
-      ],
-      InternalMedicineGastroenterology: [
-        {
-          name: "Prof. Dr. Taha Abdel Hamid",
-          specialty: "InternalMedicineGastroenterology",
-        },
-        {
-          name: "Dr. Hisham Mahmoud",
-          specialty: "InternalMedicineGastroenterology",
-        },
-        {
-          name: "Dr. Essam Shalaby",
-          specialty: "InternalMedicineGastroenterology",
-        },
-        {
-          name: "Dr. Mahmoud Hassan",
-          specialty: "InternalMedicineGastroenterology",
-        },
-      ],
-      ENT: [
-        { name: "Dr. Rafik El-Kady", specialty: "ENT" },
-        { name: "Dr. Mohamed Hossam", specialty: "ENT" },
-        { name: "Dr. Rowan", specialty: "ENT" },
-        { name: "Dr. Mohamed El-Aggag", specialty: "ENT" },
-      ],
-      ChestAllergy: [
-        { name: "Dr. Eman Abdel Salam", specialty: "ChestAllergy" },
-        { name: "Dr. Karim Elhamy", specialty: "ChestAllergy" },
-      ],
-      OrthopedicsJoints: [
-        { name: "Dr. Alaa Shebeeb", specialty: "OrthopedicsJoints" },
-        { name: "Dr. Mohamed Ghazi", specialty: "OrthopedicsJoints" },
-      ],
-      Rheumatology: [
-        { name: "Prof. Dr. Naglaa Ali", specialty: "Rheumatology" },
-      ],
-      neurology: [{ name: "Dr. Walid Attia", specialty: "neurology" }],
-      "OB-GYN": [
-        { name: "Dr. Hisham Morsi", specialty: "OB-GYN" },
-        { name: "Dr. Afaf Shaheen", specialty: "OB-GYN" },
-        { name: "Dr. Nahed Mohamed", specialty: "OB-GYN" },
-        { name: "Dr. Hassan Abdel Kader", specialty: "OB-GYN" },
-      ],
-      Psychology: [
-        { name: "Dr. Ahmed El-Nahhas", specialty: "Psychology" },
-        { name: "Dr. Amira Shaheen", specialty: "Psychology" },
-        { name: "Dr. Azza Abdel Wahab", specialty: "Psychology" },
-      ],
-      Cardiology: [
-        { name: "Dr. Abdel Rahman Metwally", specialty: "Cardiology" },
-        { name: "Dr. Mohamed Nabil", specialty: "Cardiology" },
-      ],
-      Urology: [
-        { name: "Dr. Ihab Raafat", specialty: "Urology" },
-        { name: "Dr. Ashraf Othman", specialty: "Urology" },
-        { name: "Dr. Ahmed Abdullah", specialty: "Urology" },
-      ],
-    };
-
-    if (!specialty) {
-      // Return all doctors if no specialty selected
-      return Object.values(specialtyDoctors).flat();
-    }
-
-    return specialtyDoctors[specialty] || [];
-  }
 
   // Update time dropdown based on selected specialty and doctor
   function updateTimeDropdown(specialty, doctor) {
@@ -644,7 +770,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Get specialty name
       const specialtyKey = findSpecialtyByValue(selectedSpecialty);
       const specialtyName = getSpecialtyDisplayName(specialtyKey);
-
+  
       // Show loading state
       const submitBtn = appointmentForm.querySelector(".submit-btn");
       const originalBtnText = submitBtn.textContent;

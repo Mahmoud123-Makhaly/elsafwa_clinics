@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doctors</title>
+    <title>عيادة الصفوة - الأطباء</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +17,55 @@
 
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/doctors.css" />
+    <style>
+      /* RTL-specific styles */
+      body {
+        direction: rtl;
+        text-align: right;
+      }
+      .dropdown-menu {
+        text-align: right;
+      }
+      .dropdown-toggle::after {
+        margin-left: 0;
+        margin-right: 0.255em;
+      }
+      .me-auto {
+        margin-right: 0 !important;
+        margin-left: auto !important;
+      }
+      .ms-auto {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+      }
+      .me-2 {
+        margin-right: 0 !important;
+        margin-left: 0.5rem !important;
+      }
+      .ms-2 {
+        margin-left: 0 !important;
+        margin-right: 0.5rem !important;
+      }
+      .start-50 {
+        left: auto !important;
+        right: 50% !important;
+      }
+      .translate-middle {
+        transform: translate(50%, -50%) !important;
+      }
+      .text-start {
+        text-align: right !important;
+      }
+      .text-end {
+        text-align: left !important;
+      }
+      .float-start {
+        float: right !important;
+      }
+      .float-end {
+        float: left !important;
+      }
+    </style>
   </head>
   <body>
     <!-- start top bar  -->
@@ -52,7 +101,7 @@
 
               <a href="doctors.html">
                 <li class="d-flex align-items-center gap-2">
-                  <p class="text-white">EGYPT | ENG</p>
+                  <p class="text-white">مصر | EN</p>
                   <i class="fa-solid fa-chevron-down text-white pointer"></i>
                 </li>
               </a>
@@ -73,23 +122,23 @@
             <div class="left">
               <ul class="d-flex align-items-center gap-3 gap-lg-4">
                 <li>
-                  <a href="about-us.html">عن الصفوة</a>
+                  <a href="about-us-ar.html">من نحن</a>
                 </li>
                 <li>
-                  <a href="services.html">خدماتنا</a>
+                  <a href="services-ar.html">خدماتنا</a>
                 </li>
                 <li class="active-link">
-                  <a href="doctors-ar.html">الدكاترة</a>
+                  <a href="doctors-ar.html">الأطباء</a>
                 </li>
-                <li><a href="specialties.html">التخصصات</a></li>
+                <li><a href="specialties-ar.html">التخصصات</a></li>
               </ul>
             </div>
             <div class="right">
               <ul class="d-flex align-items-center gap-3 gap-lg-4">
-                <li><a href="blogs.html">مدونه</a></li>
-                <li><a href="#">اتصل بنا</a></li>
+                <li><a href="blogs-ar.html">المدونة</a></li>
+                <li><a href="contact-us-ar.html">اتصل بنا</a></li>
                 <li class="active">
-                  <a href="#" class="py-2 px-3">احجز معاد</a>
+                  <a href="#" class="py-2 px-3">احجز موعد</a>
                 </li>
               </ul>
             </div>
@@ -98,12 +147,15 @@
       </div>
       <div class="container">
         <div class="logo position-absolute start-50 translate-middle">
-          <a href="Home.html"><img src="images/home/Logo.png" alt="Logo" /></a>
+          <a href="home-ar.html"
+            ><img src="images/home/Logo.png" alt="Logo"
+          /></a>
         </div>
         <div class="content position-absolute">
-          <h2 class="title-1">دكاترة الصفوة</h2>
+          <h2 class="title-1">أطباء الصفوة</h2>
         </div>
       </div>
+      <!-- start filters -->
       <div class="filters">
         <div class="filters-container p-4">
           <div class="row g-2 mb-3">
@@ -122,7 +174,7 @@
                     </button>
                     <ul
                       class="dropdown-menu"
-                      style="width: fit-content; text-align: right"
+                      style="width: fit-content"
                       aria-labelledby="departmentDropdown"
                     >
                       <li>
@@ -130,7 +182,7 @@
                           class="dropdown-item"
                           href="#"
                           data-value="GeneralSurgery"
-                          >الجراحة العامة</a
+                          >جراحة عامة</a
                         >
                       </li>
                       <li>
@@ -138,12 +190,12 @@
                           class="dropdown-item"
                           href="#"
                           data-value="InternalMedicineGastroenterology"
-                          >الباطنة العامة وأمراض الجهاز الهضمي</a
+                          >الباطنة والجهاز الهضمي</a
                         >
                       </li>
                       <li>
                         <a class="dropdown-item" href="#" data-value="ENT"
-                          >الأنف والأذن والحنجرة</a
+                          >أنف وأذن وحنجرة</a
                         >
                       </li>
                       <li>
@@ -151,7 +203,7 @@
                           class="dropdown-item"
                           href="#"
                           data-value="ChestAllergy"
-                          >الصدر والحساسية</a
+                          >صدر وحساسية</a
                         >
                       </li>
                       <li>
@@ -159,7 +211,7 @@
                           class="dropdown-item"
                           href="#"
                           data-value="OrthopedicsJoints"
-                          >العظام والمفاصل</a
+                          >عظام ومفاصل</a
                         >
                       </li>
                       <li>
@@ -167,12 +219,13 @@
                           class="dropdown-item"
                           href="#"
                           data-value="Rheumatology"
-                          >الروماتيزم</a
                         >
+                          روماتيزم وأمراض المناعة
+                        </a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#" data-value="neurology"
-                          >الأعصاب</a
+                          >أمراض المخ والأعصاب</a
                         >
                       </li>
                       <li>
@@ -185,7 +238,7 @@
                       </li>
                       <li>
                         <a class="dropdown-item" href="#" data-value="OB-GYN"
-                          >النساء والتوليد</a
+                          >نساء وتوليد</a
                         >
                       </li>
                       <li>
@@ -193,7 +246,7 @@
                           class="dropdown-item"
                           href="#"
                           data-value="Psychology"
-                          >الطب النفسي</a
+                          >طب نفسي</a
                         >
                       </li>
                       <li>
@@ -201,18 +254,36 @@
                           class="dropdown-item"
                           href="#"
                           data-value="Cardiology"
-                          >أمراض القلب</a
                         >
+                          قلب وأوعية دموية
+                        </a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#" data-value="Urology"
-                          >المسالك البولية</a
+                          >مسالك بولية</a
                         >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="ClinicalNutrition"
+                        >
+                          تغذية علاجية
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="#"
+                          data-value="DermatologyAndrology"
+                        >
+                          جلدية وأمراض الذكورة
+                        </a>
                       </li>
                     </ul>
                   </div>
                 </div>
-
                 <div class="col-12 col-lg-4">
                   <div class="dropdown">
                     <button
@@ -225,9 +296,11 @@
                       اختر الطبيب
                     </button>
                     <ul
-                      class="dropdown-menu w-100 text-end"
+                      class="dropdown-menu w-100"
                       aria-labelledby="doctorDropdown"
-                    ></ul>
+                    >
+                      <!-- Doctor options will be populated dynamically -->
+                    </ul>
                   </div>
                 </div>
 
@@ -243,7 +316,7 @@
                       اختر الوقت
                     </button>
                     <ul
-                      class="dropdown-menu text-end"
+                      class="dropdown-menu"
                       style="width: fit-content; z-index: 9999"
                       aria-labelledby="timeDropdown"
                     >
@@ -267,13 +340,12 @@
                 </div>
               </div>
             </div>
-
             <div class="col-lg-2">
               <button class="btn search w-100" id="searchBtn">بحث</button>
             </div>
           </div>
 
-          <!-- User Info Form -->
+          <!-- User Info Form - Now inside the filters container -->
           <div class="col-12">
             <div class="user-info-form" id="userInfoForm">
               <div class="appointment-summary">
@@ -284,13 +356,13 @@
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label for="userName" class="form-label"
-                      >الاسم الكامل</label
+                      >الاسم بالكامل</label
                     >
                     <input
                       type="text"
                       class="form-control"
                       id="userName"
-                      placeholder="أدخل اسمك الكامل"
+                      placeholder="أدخل اسمك بالكامل"
                       required
                     />
                   </div>
@@ -306,7 +378,7 @@
                   </div>
                   <div class="col-12 mt-3">
                     <button type="submit" class="btn submit-btn w-100">
-                      إرسال
+                      تأكيد الحجز
                     </button>
                   </div>
                 </div>
@@ -321,446 +393,388 @@
       <div class="container">
         <div class="section_top text-center">
           <h2>ابحث عن</h2>
-          <h1>المتخصصين الصحيين</h1>
+          <h1>الأطباء المختصين</h1>
         </div>
-
         <div class="doctors-filters my-3 my-lg-5">
           <div class="row g-2 mb-3">
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
               <div class="item py-4" data-filter=".GeneralSurgery">
-                الجراحة العامة
+                جراحة عامة
               </div>
             </div>
-
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
               <div
                 class="item py-4"
                 data-filter=".InternalMedicineGastroenterology"
               >
-                أمراض الجهاز الهضمي
+                الباطنة والجهاز الهضمي
               </div>
             </div>
-
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
-              <div class="item py-4" data-filter=".ENT">
-                الأنف والأذن والحنجرة
-              </div>
+              <div class="item py-4" data-filter=".ENT">أنف وأذن وحنجرة</div>
             </div>
-
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
               <div class="item py-4" data-filter=".ChestAllergy">
-                أمراض الصدر والحساسية
+                صدر وحساسية
               </div>
             </div>
-
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
               <div class="item py-4" data-filter=".OrthopedicsJoints">
-                العظام والمفاصل
+                عظام ومفاصل
               </div>
             </div>
-
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
-              <div class="item py-4" data-filter=".Rheumatology">
-                الروماتيزم
+              <div class="item py-4" data-filter=".Rheumatology">روماتيزم</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
+              <div class="item py-4" data-filter=".neurology">
+                أمراض المخ والأعصاب
               </div>
             </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
-              <div class="item py-4" data-filter=".neurology">الأعصاب</div>
-            </div>
-
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
               <div class="item py-4" data-filter=".VascularSurgery">
                 جراحة الأوعية الدموية
               </div>
             </div>
-
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
-              <div class="item py-4" data-filter=".OB-GYN">النساء والتوليد</div>
+              <div class="item py-4" data-filter=".OB-GYN">نساء وتوليد</div>
             </div>
-
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
-              <div class="item py-4" data-filter=".Psychology">الطب النفسي</div>
+              <div class="item py-4" data-filter=".Psychology">طب نفسي</div>
             </div>
-
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
-              <div class="item py-4" data-filter=".Cardiology">أمراض القلب</div>
+              <div class="item py-4" data-filter=".Cardiology">قلب</div>
             </div>
-
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
-              <div class="item py-4" data-filter=".Urology">
-                المسالك البولية
+              <div class="item py-4" data-filter=".Urology">مسالك بولية</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
+              <div class="item py-4" data-filter=".ClinicalNutrition">
+                تغذية علاجية
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl">
+              <div class="item py-4" data-filter=".DermatologyAndrology">
+                جلدية وأمراض الذكورة
               </div>
             </div>
           </div>
         </div>
-
         <!-- start doctors -->
         <div class="doctors text-center position-relative">
           <div class="container">
             <div class="doctors-container">
               <div class="row g-4 mixitup-container" id="doctors-list">
-                <!-- General Surgery -->
+                <!-- Doctor cards with MixItUp classes -->
+                <!-- General Surgery data -->
                 <div
                   class="col-md-6 col-lg-3 mix GeneralSurgery"
-                  data-doctor="Prof. Dr. Hany Eissa"
+                  data-doctor="أ.د/ هاني عيسى"
+                  data-schedule="evening"
+                >
+                  <div class="doctor-card position-relative">
+                    <img src="images/doctors/doctor.png" alt="أ.د/ هاني عيسى" />
+                    <div class="desc position-absolute py-3">
+                      <h2>أ.د/ هاني عيسى</h2>
+                      <p>استشاري جراحة عامة وأورام وجراحة مناظير وجراحة سمنة</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Internal Medicine & Gastroenterology data -->
+                <div
+                  class="col-md-6 col-lg-3 mix InternalMedicineGastroenterology"
+                  data-doctor="أ.د/ طه عبد الحميد"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
-                      alt="Prof. Dr. Hany Eissa"
+                      alt="أ.د/ طه عبد الحميد"
                     />
                     <div class="desc position-absolute py-3">
-                      <h2>الأستاذ الدكتور هاني عيسى</h2>
+                      <h2>أ.د/ طه عبد الحميد</h2>
                       <p>
-                        استشاري الجراحة العامة، الأورام، الجراحة بالمنظار،
-                        وجراحات السمنة
+                        استشاري باطنة عامة وجهاز هضمي ومناظير وغدد صماء وسكري
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <!-- Internal Medicine & Gastroenterology -->
                 <div
                   class="col-md-6 col-lg-3 mix InternalMedicineGastroenterology"
-                  data-doctor="Prof. Dr. Taha Abdel Hamid"
+                  data-doctor="د/ هشام محمود"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Prof. Dr. Taha Abdel Hamid"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ هشام محمود" />
                     <div class="desc position-absolute py-3">
-                      <h2>الأستاذ الدكتور طه عبد الحميد</h2>
-                      <p>استشاري الباطنة العامة، الغدد الصماء، والسكري</p>
+                      <h2>د/ هشام محمود</h2>
+                      <p>استشاري باطنة عامة وغدد صماء وسكري</p>
                     </div>
                   </div>
                 </div>
 
                 <div
                   class="col-md-6 col-lg-3 mix InternalMedicineGastroenterology"
-                  data-doctor="Dr. Hisham Mahmoud"
+                  data-doctor="د/ عصام شلبي"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Hisham Mahmoud"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ عصام شلبي" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور هشام محمود</h2>
-                      <p>استشاري الباطنة العامة، الغدد الصماء، والسكري</p>
+                      <h2>د/ عصام شلبي</h2>
+                      <p>استشاري باطنة عامة وجهاز هضمي ومناظير</p>
                     </div>
                   </div>
                 </div>
 
                 <div
                   class="col-md-6 col-lg-3 mix InternalMedicineGastroenterology"
-                  data-doctor="Dr. Essam Shalaby"
-                  data-schedule="evening"
-                >
-                  <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Essam Shalaby"
-                    />
-                    <div class="desc position-absolute py-3">
-                      <h2>الدكتور عصام شلبي</h2>
-                      <p>استشاري الباطنة العامة وأمراض الجهاز الهضمي</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="col-md-6 col-lg-3 mix InternalMedicineGastroenterology"
-                  data-doctor="Dr. Mahmoud Hassan"
+                  data-doctor="د/ محمود حسن"
                   data-schedule="afternoon"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Mahmoud Hassan"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ محمود حسن" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور محمود حسن</h2>
-                      <p>أخصائي الباطنة العامة</p>
+                      <h2>د/ محمود حسن</h2>
+                      <p>أخصائي باطنة عامة</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- ENT -->
+                <!-- ENT data -->
                 <div
                   class="col-md-6 col-lg-3 mix ENT"
-                  data-doctor="Dr. Rafik El-Kady"
+                  data-doctor="د/ رفيق القاضي"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Rafik El-Kady"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ رفيق القاضي" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور رفيق القاضي</h2>
-                      <p>استشاري الأنف والأذن والحنجرة</p>
+                      <h2>د/ رفيق القاضي</h2>
+                      <p>استشاري أنف وأذن وحنجرة</p>
                     </div>
                   </div>
                 </div>
 
                 <div
                   class="col-md-6 col-lg-3 mix ENT"
-                  data-doctor="Dr. Mohamed Hossam"
+                  data-doctor="د/ محمد حسام"
                   data-schedule="afternoon,evening"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Mohamed Hossam"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ محمد حسام" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور محمد حسام</h2>
-                      <p>استشاري الأنف والأذن والحنجرة</p>
+                      <h2>د/ محمد حسام</h2>
+                      <p>استشاري أنف وأذن وحنجرة</p>
                     </div>
                   </div>
                 </div>
 
                 <div
                   class="col-md-6 col-lg-3 mix ENT"
-                  data-doctor="Dr. Rowan"
+                  data-doctor="د/ روان"
                   data-schedule="afternoon"
                 >
                   <div class="doctor-card position-relative">
-                    <img src="images/doctors/doctor.png" alt="Dr. Rowan" />
+                    <img src="images/doctors/doctor.png" alt="د/ روان" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتورة روان</h2>
-                      <p>استشاري الأنف والأذن والحنجرة</p>
+                      <h2>د/ روان</h2>
+                      <p>استشاري أنف وأذن وحنجرة</p>
                     </div>
                   </div>
                 </div>
 
                 <div
                   class="col-md-6 col-lg-3 mix ENT"
-                  data-doctor="Dr. Mohamed El-Aggag"
+                  data-doctor="د/ محمد العجاج"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Mohamed El-Aggag"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ محمد العجاج" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور محمد العجاج</h2>
-                      <p>استشاري الأنف والأذن والحنجرة</p>
+                      <h2>د/ محمد العجاج</h2>
+                      <p>استشاري أنف وأذن وحنجرة</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- Chest & Allergy -->
+                <!-- Chest & Allergy data -->
                 <div
                   class="col-md-6 col-lg-3 mix ChestAllergy"
-                  data-doctor="Dr. Eman Abdel Salam"
+                  data-doctor="د/ إيمان عبد السلام"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
-                      alt="Dr. Eman Abdel Salam"
+                      alt="د/ إيمان عبد السلام"
                     />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتورة إيمان عبد السلام</h2>
-                      <p>استشاري أمراض الصدر</p>
+                      <h2>د/ إيمان عبد السلام</h2>
+                      <p>استشاري أمراض صدرية</p>
                     </div>
                   </div>
                 </div>
 
                 <div
                   class="col-md-6 col-lg-3 mix ChestAllergy"
-                  data-doctor="Dr. Karim Elhamy"
+                  data-doctor="د/ كريم الهمي"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Karim Elhamy"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ كريم الهمي" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور كريم حلمي</h2>
-                      <p>أخصائي أمراض الصدر</p>
+                      <h2>د/ كريم الهمي</h2>
+                      <p>أخصائي أمراض صدرية</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- Orthopedics & Joints -->
+                <!-- Orthopedics & Joints data -->
                 <div
                   class="col-md-6 col-lg-3 mix OrthopedicsJoints"
-                  data-doctor="Dr. Alaa Shebeeb"
+                  data-doctor="د/ علاء شبيب"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Alaa Shebeeb"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ علاء شبيب" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور علاء شبيب</h2>
-                      <p>استشاري جراحة العظام والمفاصل والعمود الفقري</p>
+                      <h2>د/ علاء شبيب</h2>
+                      <p>استشاري عظام ومفاصل وعمود فقري وجراحتها</p>
                     </div>
                   </div>
                 </div>
 
                 <div
                   class="col-md-6 col-lg-3 mix OrthopedicsJoints"
-                  data-doctor="Dr. Mohamed Ghazi"
+                  data-doctor="د/ محمد غازي"
                   data-schedule="afternoon"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Mohamed Ghazi"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ محمد غازي" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور محمد غازي</h2>
-                      <p>استشاري جراحة العظام والمفاصل والعمود الفقري</p>
+                      <h2>د/ محمد غازي</h2>
+                      <p>استشاري عظام ومفاصل وعمود فقري وجراحتها</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- Rheumatology -->
+                <!-- Rheumatology data -->
                 <div
                   class="col-md-6 col-lg-3 mix Rheumatology"
-                  data-doctor="Prof. Dr. Naglaa Ali"
+                  data-doctor="أ.د/ نجلاء علي"
                   data-schedule="appointment"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Prof. Dr. Naglaa Ali"
-                    />
+                    <img src="images/doctors/doctor.png" alt="أ.د/ نجلاء علي" />
                     <div class="desc position-absolute py-3">
-                      <h2>الأستاذة الدكتورة نجلاء علي</h2>
-                      <p>استشاري أمراض المناعة والروماتيزم</p>
+                      <h2>أ.د/ نجلاء علي</h2>
+                      <p>استشاري أمراض روماتيزم ومناعة</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- Neurology -->
+                <!-- Neurology data -->
                 <div
                   class="col-md-6 col-lg-3 mix neurology"
-                  data-doctor="Dr. Walid Attia"
+                  data-doctor="د/ وليد عطية"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Walid Attia"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ وليد عطية" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور وليد عطية</h2>
-                      <p>استشاري طب الأعصاب</p>
+                      <h2>د/ وليد عطية</h2>
+                      <p>استشاري أمراض مخ وأعصاب</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- OB-GYN -->
+                <!-- OB-GYN data -->
                 <div
                   class="col-md-6 col-lg-3 mix OB-GYN"
-                  data-doctor="Dr. Hisham Morsi"
+                  data-doctor="د/ هشام مرسي"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Hisham Morsi"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ هشام مرسي" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور هشام مرسي</h2>
-                      <p>استشاري النساء والتوليد</p>
+                      <h2>د/ هشام مرسي</h2>
+                      <p>استشاري نساء وتوليد</p>
                     </div>
                   </div>
                 </div>
 
                 <div
                   class="col-md-6 col-lg-3 mix OB-GYN"
-                  data-doctor="Dr. Afaf Shaheen"
+                  data-doctor="د/ عفاف شاهين"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Afaf Shaheen"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ عفاف شاهين" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتورة عفاف شاهين</h2>
-                      <p>استشاري النساء والتوليد</p>
+                      <h2>د/ عفاف شاهين</h2>
+                      <p>استشاري نساء وتوليد</p>
                     </div>
                   </div>
                 </div>
 
                 <div
                   class="col-md-6 col-lg-3 mix OB-GYN"
-                  data-doctor="Dr. Nahed Mohamed"
+                  data-doctor="د/ ناهد محمد"
                   data-schedule="afternoon"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Nahed Mohamed"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ ناهد محمد" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتورة ناهد محمد</h2>
-                      <p>استشاري النساء والتوليد</p>
+                      <h2>د/ ناهد محمد</h2>
+                      <p>استشاري نساء وتوليد</p>
                     </div>
                   </div>
                 </div>
 
                 <div
                   class="col-md-6 col-lg-3 mix OB-GYN"
-                  data-doctor="Dr. Hassan Abdel Kader"
+                  data-doctor="د/ حسن عبد القادر"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
-                      alt="Dr. Hassan Abdel Kader"
+                      alt="د/ حسن عبد القادر"
                     />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور حسن عبد القادر</h2>
-                      <p>استشاري النساء والتوليد</p>
+                      <h2>د/ حسن عبد القادر</h2>
+                      <p>استشاري نساء وتوليد</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- Psychology -->
+                <!-- Psychology data -->
                 <div
                   class="col-md-6 col-lg-3 mix Psychology"
-                  data-doctor="Dr. Ahmed El-Nahhas"
+                  data-doctor="د/ أحمد النحاس"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Ahmed El-Nahhas"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ أحمد النحاس" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور أحمد النحاس</h2>
-                      <p>استشاري الطب النفسي وعلاج الإدمان</p>
+                      <h2>د/ أحمد النحاس</h2>
+                      <p>استشاري طب نفسي وعلاج الإدمان</p>
                     </div>
                   </div>
                 </div>
 
                 <div
                   class="col-md-6 col-lg-3 mix Psychology"
-                  data-doctor="Dr. Amira Shaheen"
+                  data-doctor="د/ أميرة شاهين"
                   data-schedule="afternoon"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Amira Shaheen"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ أميرة شاهين" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتورة أميرة شاهين</h2>
+                      <h2>د/ أميرة شاهين</h2>
                       <p>أستاذ الطب النفسي وتعديل السلوك</p>
                     </div>
                   </div>
@@ -768,115 +782,143 @@
 
                 <div
                   class="col-md-6 col-lg-3 mix Psychology"
-                  data-doctor="Dr. Azza Abdel Wahab"
+                  data-doctor="د/ عزة عبد الوهاب"
                   data-schedule="morning"
                 >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
-                      alt="Dr. Azza Abdel Wahab"
+                      alt="د/ عزة عبد الوهاب"
                     />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتورة عزة عبد الوهاب</h2>
-                      <p>
-                        استشاري علم النفس، التخاطب، اللغة، تعديل السلوك، وذوي
-                        الاحتياجات الخاصة
-                      </p>
+                      <h2>د/ عزة عبد الوهاب</h2>
+                      <p>استشاري نفسي وتخاطب وتعديل سلوك وذوي احتياجات خاصة</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- Cardiology -->
+                <!-- Cardiology data -->
                 <div
                   class="col-md-6 col-lg-3 mix Cardiology"
-                  data-doctor="Dr. Abdel Rahman Metwally"
+                  data-doctor="د/ عبد الرحمن متولي"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
-                      alt="Dr. Abdel Rahman Metwally"
+                      alt="د/ عبد الرحمن متولي"
                     />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور عبد الرحمن متولي</h2>
-                      <p>استشاري أمراض القلب</p>
+                      <h2>د/ عبد الرحمن متولي</h2>
+                      <p>استشاري أمراض قلب</p>
                     </div>
                   </div>
                 </div>
 
                 <div
                   class="col-md-6 col-lg-3 mix Cardiology"
-                  data-doctor="Dr. Mohamed Nabil"
+                  data-doctor="د/ محمد نبيل"
                   data-schedule="afternoon"
                 >
                   <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Mohamed Nabil"
-                    />
+                    <img src="images/doctors/doctor.png" alt="د/ محمد نبيل" />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور محمد نبيل</h2>
-                      <p>استشاري أمراض القلب</p>
+                      <h2>د/ محمد نبيل</h2>
+                      <p>استشاري أمراض قلب</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- Urology -->
+                <!-- Urology data -->
                 <div
                   class="col-md-6 col-lg-3 mix Urology"
-                  data-doctor="Dr. Ihab Raafat"
+                  data-doctor="د/ إيهاب رأفت"
+                  data-schedule="evening"
+                >
+                  <div class="doctor-card position-relative">
+                    <img src="images/doctors/doctor.png" alt="د/ إيهاب رأفت" />
+                    <div class="desc position-absolute py-3">
+                      <h2>د/ إيهاب رأفت</h2>
+                      <p>استشاري مسالك بولية</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-6 col-lg-3 mix Urology"
+                  data-doctor="د/ أشرف عثمان"
+                  data-schedule="afternoon"
+                >
+                  <div class="doctor-card position-relative">
+                    <img src="images/doctors/doctor.png" alt="د/ أشرف عثمان" />
+                    <div class="desc position-absolute py-3">
+                      <h2>د/ أشرف عثمان</h2>
+                      <p>استشاري مسالك بولية</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-6 col-lg-3 mix Urology"
+                  data-doctor="د/ أحمد عبد الله"
                   data-schedule="evening"
                 >
                   <div class="doctor-card position-relative">
                     <img
                       src="images/doctors/doctor.png"
-                      alt="Dr. Ihab Raafat"
+                      alt="د/ أحمد عبد الله"
                     />
                     <div class="desc position-absolute py-3">
-                      <h2>الدكتور إيهاب رأفت</h2>
-                      <p>استشاري جراحة المسالك البولية</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="col-md-6 col-lg-3 mix Urology"
-                  data-doctor="Dr. Ashraf Othman"
-                  data-schedule="afternoon"
-                >
-                  <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Ashraf Othman"
-                    />
-                    <div class="desc position-absolute py-3">
-                      <h2>الدكتور أشرف عثمان</h2>
-                      <p>استشاري جراحة المسالك البولية</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="col-md-6 col-lg-3 mix Urology"
-                  data-doctor="Dr. Ahmed Abdullah"
-                  data-schedule="evening"
-                >
-                  <div class="doctor-card position-relative">
-                    <img
-                      src="images/doctors/doctor.png"
-                      alt="Dr. Ahmed Abdullah"
-                    />
-                    <div class="desc position-absolute py-3">
-                      <h2>الدكتور أحمد عبد الله</h2>
+                      <h2>د/ أحمد عبد الله</h2>
                       <p>
-                        جراحة الكلى والذكورة والمناظير وزمالة البورد الأوروبي في
-                        جراحة المسالك البولية
+                        جراحة كلى وجراحة ذكورة ومناظير وزميل البورد الأوروبي في
+                        المسالك البولية
                       </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Clinical Nutrition Doctors -->
+                <div
+                  class="col-md-6 col-lg-3 mix ClinicalNutrition"
+                  data-doctor="د/ شيرين عيسى"
+                  data-schedule="afternoon"
+                >
+                  <div class="doctor-card position-relative">
+                    <img src="images/doctors/doctor.png" alt="د/ شيرين عيسى" />
+                    <div class="desc position-absolute py-3">
+                      <h2>د/ شيرين عيسى</h2>
+                      <p>استشاري تغذية علاجية</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 mix DermatologyAndrology"
+                  data-doctor="د/ سعد منير"
+                  data-schedule="evening"
+                >
+                  <div class="doctor-card position-relative">
+                    <img src="images/doctors/doctor.png" alt="د/ سعد منير" />
+                    <div class="desc position-absolute py-3">
+                      <h2>د/ سعد منير</h2>
+                      <p>استشاري جلدية وأمراض الذكورة</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 mix DermatologyAndrology"
+                  data-doctor="د/ هيثم سراج"
+                  data-schedule="evening"
+                >
+                  <div class="doctor-card position-relative">
+                    <img src="images/doctors/doctor.png" alt="د/ هيثم سراج" />
+                    <div class="desc position-absolute py-3">
+                      <h2>د/ هيثم سراج</h2>
+                      <p>استشاري جلدية وأمراض الذكورة</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- row -->
             </div>
           </div>
         </div>
@@ -895,10 +937,9 @@
                 style="width: 31%"
               />
               <p class="lh-lg" style="font-size: 15px">
-                El-Safwa Polyclinics Provides Comprehensive Medical Care Across
-                All Specialties, Combining Advanced Technology And Compassionate
-                Expertise To Ensure Every Patient Receives The Highest Standard
-                Of Care.
+                تقدم عيادات الصفوة رعاية طبية شاملة عبر جميع التخصصات، حيث تجمع
+                بين التكنولوجيا المتقدمة والخبرة الرحيمة لضمان حصول كل مريض على
+                أعلى مستوى من الرعاية.
               </p>
             </div>
           </div>
@@ -907,33 +948,35 @@
             <div class="row justify-content-center">
               <div class="col-12 col-lg-6">
                 <ul class="m-auto pt-5">
-                  <li class="mb-4"><a href="#">Quick Links</a></li>
+                  <li class="mb-4"><a href="#">روابط سريعة</a></li>
                   <div class="d-flex gap-3 flex-column">
                     <li class="bordered">
-                      <a href="about-us.html" target="_blank">About Us</a>
+                      <a href="about-us-ar.html" target="_blank">من نحن</a>
                     </li>
                     <li class="bordered">
-                      <a href="services.html" target="_blank">Our Services</a>
+                      <a href="services-ar.html" target="_blank">خدماتنا</a>
                     </li>
                     <li class="bordered">
-                      <a href="doctors.html" target="_blank">Our Doctors </a>
+                      <a href="doctors-ar.html" target="_blank">أطباؤنا </a>
                     </li>
-                    <li><a href="blogs.html" target="_blank"> Careers </a></li>
+                    <li>
+                      <a href="blogs-ar.html" target="_blank"> الوظائف </a>
+                    </li>
                   </div>
                 </ul>
               </div>
               <div class="col-12 col-lg-6">
                 <ul class="m-auto pt-5">
-                  <li class="mb-4"><a href="#">Quick Links</a></li>
+                  <li class="mb-4"><a href="#">روابط سريعة</a></li>
                   <div class="d-flex gap-3 flex-column">
                     <li class="bordered">
-                      <a href="contact-us.html" target="_blank"> Contact Us</a>
+                      <a href="contact-us-ar.html" target="_blank"> اتصل بنا</a>
                     </li>
                     <li class="bordered">
-                      <a href="#"> Refund And Cancellation Policies </a>
+                      <a href="#"> سياسات الاسترجاع والإلغاء </a>
                     </li>
-                    <li class="bordered"><a href="#"> Privacy Policy</a></li>
-                    <li><a href="#"> Terms And Conditions </a></li>
+                    <li class="bordered"><a href="#"> سياسة الخصوصية</a></li>
+                    <li><a href="#"> الشروط والأحكام </a></li>
                   </div>
                 </ul>
               </div>
@@ -941,10 +984,9 @@
           </div>
           <div class="col-lg-3">
             <div class="pt-5 d-flex flex-column gap-3">
-              <h6 class="mb-0">Address</h6>
+              <h6 class="mb-0">العنوان</h6>
               <p>
-                Clinic Number (114) 1st Floor Medical Center 1 – Madinaty South
-                Center
+                عيادة رقم (114) الدور الأول المركز الطبي 1 - مركز مدينتي الجنوبي
               </p>
               <div class="d-flex gap-2 align-items-center">
                 <a href="#" class="text-white d-flex align-items-center gap-2">
@@ -971,7 +1013,7 @@
     </footer>
     <!-- start copyright -->
     <div class="copyright py-3">
-      <p>&copy; Alsafwa Clinics 2025 | All Rights Reserved</p>
+      <p>© عيادات الصفوة 2025 | جميع الحقوق محفوظة</p>
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>

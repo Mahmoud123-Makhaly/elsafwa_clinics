@@ -69,7 +69,9 @@ const translations = {
 };
 
 // Doctor schedules database with Arabic support
+
 const doctorSchedules = {
+  // General Surgery
   "Prof. Dr. Hany Eissa": [
     {
       day: isArabic ? "السبت - الخميس" : "Saturday - Thursday",
@@ -77,6 +79,8 @@ const doctorSchedules = {
       period: "evening",
     },
   ],
+
+  // Internal Medicine & Gastroenterology
   "Prof. Dr. Taha Abdel Hamid": [
     {
       day: isArabic ? "الأحد – الثلاثاء" : "Sunday – Tuesday",
@@ -89,7 +93,7 @@ const doctorSchedules = {
       day: isArabic
         ? "السبت – الاثنين – الأربعاء"
         : "Saturday – Monday – Wednesday",
-      time: "7:00 PM – 10:00 PM",
+      time: "7:00 PM – 9:00 PM",
       period: "evening",
     },
   ],
@@ -109,6 +113,8 @@ const doctorSchedules = {
       period: "afternoon",
     },
   ],
+
+  // ENT
   "Dr. Rafik El-Kady": [
     {
       day: isArabic
@@ -144,6 +150,8 @@ const doctorSchedules = {
       period: "evening",
     },
   ],
+
+  // Chest & Allergy
   "Dr. Eman Abdel Salam": [
     {
       day: isArabic
@@ -162,6 +170,8 @@ const doctorSchedules = {
       period: "evening",
     },
   ],
+
+  // Orthopedics & Joints
   "Dr. Alaa Shebeeb": [
     {
       day: isArabic ? "السبت – الخميس" : "Saturday – Thursday",
@@ -176,6 +186,8 @@ const doctorSchedules = {
       period: "afternoon",
     },
   ],
+
+  // Rheumatology & Immunological Diseases
   "Prof. Dr. Naglaa Ali": [
     {
       day: isArabic ? "السبت – الثلاثاء" : "Saturday – Tuesday",
@@ -183,100 +195,155 @@ const doctorSchedules = {
       period: "appointment",
     },
   ],
+
+  // Neurology
   "Dr. Walid Attia": [
     {
-      day: isArabic ? "السبت - الخميس" : "Saturday - Thursday",
-      time: "6:00 PM - 9:00 PM",
-      period: "evening",
+      day: isArabic ? "السبت - الأربعاء" : "Saturday - Wednesday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
+
+  // Vascular Surgery
+  "Dr. Ihab Abdel Aziz": [
+    {
+      day: isArabic ? "السبت - الخميس" : "Saturday - Thursday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
+    },
+  ],
+
+  // OB/GYN
   "Dr. Hisham Morsi": [
     {
-      day: isArabic ? "السبت - الأربعاء" : "Saturday - Wednesday",
-      time: "5:00 PM - 8:00 PM",
-      period: "evening",
+      day: isArabic ? "الأحد - الأربعاء" : "Sunday - Wednesday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Afaf Shaheen": [
     {
-      day: isArabic ? "الأحد - الخميس" : "Sunday - Thursday",
-      time: "6:00 PM - 9:00 PM",
-      period: "evening",
+      day: isArabic ? "الخميس - السبت" : "Thursday - Saturday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Nahed Mohamed": [
     {
-      day: isArabic ? "الاثنين - الجمعة" : "Monday - Friday",
-      time: "1:00 PM - 4:00 PM",
-      period: "afternoon",
+      day: isArabic ? "الأحد - الأربعاء" : "Sunday - Wednesday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Hassan Abdel Kader": [
     {
-      day: isArabic ? "السبت - الخميس" : "Saturday - Thursday",
-      time: "7:00 PM - 10:00 PM",
-      period: "evening",
+      day: isArabic ? "الاثنين - الأربعاء" : "Monday - Wednesday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
+
+  // Psychology
   "Dr. Ahmed El-Nahhas": [
     {
-      day: isArabic ? "الأحد - الخميس" : "Sunday - Thursday",
-      time: "5:00 PM - 8:00 PM",
-      period: "evening",
+      day: isArabic ? "الأحد – الثلاثاء" : "Sunday – Tuesday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Amira Shaheen": [
     {
-      day: isArabic ? "الاثنين - الجمعة" : "Monday - Friday",
-      time: "12:00 PM - 3:00 PM",
-      period: "afternoon",
+      day: isArabic ? "السبت – الأربعاء" : "Saturday – Wednesday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Azza Abdel Wahab": [
     {
-      day: isArabic ? "السبت - الأربعاء" : "Saturday - Wednesday",
-      time: "9:00 AM - 12:00 PM",
-      period: "morning",
+      day: isArabic
+        ? "الأحد – الثلاثاء – الخميس"
+        : "Sunday – Tuesday – Thursday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
+
+  // Cardiology & Vascular Diseases
   "Dr. Abdel Rahman Metwally": [
     {
-      day: isArabic ? "السبت - الخميس" : "Saturday - Thursday",
-      time: "6:00 PM - 9:00 PM",
-      period: "evening",
+      day: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Mohamed Nabil": [
     {
-      day: isArabic ? "الأحد - الخميس" : "Sunday - Thursday",
-      time: "1:00 PM - 4:00 PM",
-      period: "afternoon",
+      day: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
+
+  // Urology
   "Dr. Ihab Raafat": [
     {
-      day: isArabic ? "السبت - الأربعاء" : "Saturday - Wednesday",
-      time: "5:00 PM - 8:00 PM",
-      period: "evening",
+      day: isArabic
+        ? "الاثنين – الخميس – الجمعة"
+        : "Monday – Thursday – Friday",
+      time: isArabic ? "بموعد مسبق" : "By Prior Appointment",
+      period: "appointment",
     },
   ],
   "Dr. Ashraf Othman": [
     {
-      day: isArabic ? "الاثنين - الجمعة" : "Monday - Friday",
-      time: "12:00 PM - 3:00 PM",
+      day: isArabic ? "الأحد" : "Sunday",
+      time: "5:00 PM – 7:00 PM",
+      period: "evening",
+    },
+    {
+      day: isArabic ? "الخميس" : "Thursday",
+      time: "4:00 PM – 6:00 PM",
       period: "afternoon",
     },
   ],
   "Dr. Ahmed Abdullah": [
     {
-      day: isArabic ? "الأحد - الخميس" : "Sunday - Thursday",
-      time: "6:00 PM - 9:00 PM",
+      day: isArabic ? "الاثنين – الخميس" : "Monday – Thursday",
+      time: "5:00 PM – 7:00 PM",
+      period: "evening",
+    },
+  ],
+
+  // Clinical Nutrition
+  "Dr. Shereen Eissa": [
+    {
+      day: isArabic
+        ? "الأحد – الثلاثاء – الخميس"
+        : "Sunday – Tuesday – Thursday",
+      time: "4:00 PM – 7:00 PM",
+      period: "afternoon",
+    },
+  ],
+
+  // Dermatology & Andrology
+  "Dr. Saad Mounir": [
+    {
+      day: isArabic ? "السبت - الأربعاء" : "Saturday - Wednesday",
+      time: "8:00 PM – 10:00 PM",
+      period: "evening",
+    },
+  ],
+  "Dr. Haitham Sirag": [
+    {
+      day: isArabic ? "السبت - الخميس" : "Saturday - Thursday",
+      time: "7:00 PM – 9:00 PM",
       period: "evening",
     },
   ],
 };
 
-// Specialty to specialty value mapping with Arabic names
+// Updated Specialty to specialty value mapping with Arabic names
 const specialtyMap = {
   "General Surgery": {
     value: "GeneralSurgery",
@@ -298,12 +365,12 @@ const specialtyMap = {
     value: "OrthopedicsJoints",
     ar: "عظام ومفاصل",
   },
-  Rheumatology: {
-    value: "Rheumatology",
-    ar: "روماتيزم",
+  "Rheumatology & Immunological Diseases": {
+    value: "RheumatologyImmunological",
+    ar: "روماتيزم وأمراض المناعة",
   },
   Neurology: {
-    value: "neurology",
+    value: "Neurology",
     ar: "أعصاب",
   },
   "Vascular Surgery": {
@@ -318,13 +385,21 @@ const specialtyMap = {
     value: "Psychology",
     ar: "طب نفسي",
   },
-  Cardiology: {
-    value: "Cardiology",
+  "Cardiology & Vascular Diseases": {
+    value: "CardiologyVascular",
     ar: "قلب وأوعية دموية",
   },
   Urology: {
     value: "Urology",
     ar: "مسالك بولية",
+  },
+  "Clinical Nutrition": {
+    value: "ClinicalNutrition",
+    ar: "تغذية علاجية",
+  },
+  "Dermatology & Andrology": {
+    value: "DermatologyAndrology",
+    ar: "جلدية وتناسلية",
   },
 };
 
@@ -510,6 +585,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Update time dropdown based on selected specialty and doctor
+  // Update time dropdown based on selected specialty and doctor
   function updateTimeDropdown(specialty, doctor) {
     const timeDropdownMenu = document.querySelector(
       "#timeDropdown + .dropdown-menu"
@@ -518,11 +594,74 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const availableTimes = new Set();
 
+    // Map Arabic doctor names to English for schedule lookup
+    const doctorNameMap = {
+      "أ.د/ هاني عيسى": "Prof. Dr. Hany Eissa",
+      "أ.د/ طه عبد الحميد": "Prof. Dr. Taha Abdel Hamid",
+      "د/ هشام محمود": "Dr. Hisham Mahmoud",
+      "د/ عصام شلبي": "Dr. Essam Shalaby",
+      "د/ محمود حسن": "Dr. Mahmoud Hassan",
+      "د/ رفيق القاضي": "Dr. Rafik El-Kady",
+      "د/ محمد حسام": "Dr. Mohamed Hossam",
+      "د/ روان": "Dr. Rowan",
+      "د/ محمد العجاج": "Dr. Mohamed El-Aggag",
+      "د/ إيمان عبد السلام": "Dr. Eman Abdel Salam",
+      "د/ كريم الهمي": "Dr. Karim Elhamy",
+      "د/ علاء شبيب": "Dr. Alaa Shebeeb",
+      "د/ محمد غازي": "Dr. Mohamed Ghazi",
+      "أ.د/ نجلاء علي": "Prof. Dr. Naglaa Ali",
+      "د/ وليد عطية": "Dr. Walid Attia",
+      "د/ هشام مرسي": "Dr. Hisham Morsi",
+      "د/ عفاف شاهين": "Dr. Afaf Shaheen",
+      "د/ ناهد محمد": "Dr. Nahed Mohamed",
+      "د/ حسن عبد القادر": "Dr. Hassan Abdel Kader",
+      "د/ أحمد النحاس": "Dr. Ahmed El-Nahhas",
+      "د/ أميرة شاهين": "Dr. Amira Shaheen",
+      "د/ عزة عبد الوهاب": "Dr. Azza Abdel Wahab",
+      "د/ عبد الرحمن متولي": "Dr. Abdel Rahman Metwally",
+      "د/ محمد نبيل": "Dr. Mohamed Nabil",
+      "د/ إيهاب رأفت": "Dr. Ihab Raafat",
+      "د/ أشرف عثمان": "Dr. Ashraf Othman",
+      "د/ أحمد عبد الله": "Dr. Ahmed Abdullah",
+      "د/ شيرين عيسى": "Dr. Shereen Eissa",
+      "د/ سعد منير": "Dr. Saad Mounir",
+      "د/ هيثم سراج": "Dr. Haitham Sirag",
+    };
+
     if (doctor) {
+      // Convert Arabic doctor name to English for schedule lookup
+      const englishDoctorName = doctorNameMap[doctor] || doctor;
+
       // Show times for specific doctor
-      const schedules = doctorSchedules[doctor] || [];
+      const schedules = doctorSchedules[englishDoctorName] || [];
       schedules.forEach((schedule) => {
-        const displayText = `${schedule.day} (${schedule.time})`;
+        // Translate day names to Arabic if needed
+        let displayDay = schedule.day;
+        if (isArabic) {
+          // Convert English day names to Arabic
+          const dayMap = {
+            Saturday: "السبت",
+            Sunday: "الأحد",
+            Monday: "الاثنين",
+            Tuesday: "الثلاثاء",
+            Wednesday: "الأربعاء",
+            Thursday: "الخميس",
+            Friday: "الجمعة",
+            "Saturday - Thursday": "السبت - الخميس",
+            "Sunday – Tuesday": "الأحد – الثلاثاء",
+            "Saturday – Monday – Wednesday": "السبت – الاثنين – الأربعاء",
+            "Sunday – Tuesday – Thursday": "الأحد – الثلاثاء – الخميس",
+            "Saturday – Thursday": "السبت – الخميس",
+            "Monday – Thursday – Friday": "الاثنين – الخميس – الجمعة",
+            "Sunday - Wednesday": "الأحد - الأربعاء",
+            "Thursday - Saturday": "الخميس - السبت",
+            "Monday - Wednesday": "الاثنين - الأربعاء",
+            "Saturday – Wednesday": "السبت – الأربعاء",
+          };
+          displayDay = dayMap[schedule.day] || schedule.day;
+        }
+
+        const displayText = `${displayDay} (${schedule.time})`;
         availableTimes.add(
           JSON.stringify({
             text: displayText,
@@ -534,10 +673,36 @@ document.addEventListener("DOMContentLoaded", function () {
       // Show all times for doctors in specialty
       const doctors = document.querySelectorAll(`.mix.${specialty}`);
       doctors.forEach((doc) => {
-        const doctorName = doc.getAttribute("data-doctor");
-        const schedules = doctorSchedules[doctorName] || [];
+        const arabicDoctorName = doc.getAttribute("data-doctor");
+        const englishDoctorName =
+          doctorNameMap[arabicDoctorName] || arabicDoctorName;
+        const schedules = doctorSchedules[englishDoctorName] || [];
         schedules.forEach((schedule) => {
-          const displayText = `${schedule.day} (${schedule.time})`;
+          let displayDay = schedule.day;
+          if (isArabic) {
+            const dayMap = {
+              Saturday: "السبت",
+              Sunday: "الأحد",
+              Monday: "الاثنين",
+              Tuesday: "الثلاثاء",
+              Wednesday: "الأربعاء",
+              Thursday: "الخميس",
+              Friday: "الجمعة",
+              "Saturday - Thursday": "السبت - الخميس",
+              "Sunday – Tuesday": "الأحد – الثلاثاء",
+              "Saturday – Monday – Wednesday": "السبت – الاثنين – الأربعاء",
+              "Sunday – Tuesday – Thursday": "الأحد – الثلاثاء – الخميس",
+              "Saturday – Thursday": "السبت – الخميس",
+              "Monday – Thursday – Friday": "الاثنين – الخميس – الجمعة",
+              "Sunday - Wednesday": "الأحد - الأربعاء",
+              "Thursday - Saturday": "الخميس - السبت",
+              "Monday - Wednesday": "الاثنين - الأربعاء",
+              "Saturday – Wednesday": "السبت – الأربعاء",
+            };
+            displayDay = dayMap[schedule.day] || schedule.day;
+          }
+
+          const displayText = `${displayDay} (${schedule.time})`;
           availableTimes.add(
             JSON.stringify({
               text: displayText,
@@ -547,11 +712,35 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     } else {
-      // Show all times
+      // Show all times (this case shouldn't happen in normal flow)
       Object.values(doctorSchedules)
         .flat()
         .forEach((schedule) => {
-          const displayText = `${schedule.day} (${schedule.time})`;
+          let displayDay = schedule.day;
+          if (isArabic) {
+            const dayMap = {
+              Saturday: "السبت",
+              Sunday: "الأحد",
+              Monday: "الاثنين",
+              Tuesday: "الثلاثاء",
+              Wednesday: "الأربعاء",
+              Thursday: "الخميس",
+              Friday: "الجمعة",
+              "Saturday - Thursday": "السبت - الخميس",
+              "Sunday – Tuesday": "الأحد – الثلاثاء",
+              "Saturday – Monday – Wednesday": "السبت – الاثنين – الأربعاء",
+              "Sunday – Tuesday – Thursday": "الأحد – الثلاثاء – الخميس",
+              "Saturday – Thursday": "السبت – الخميس",
+              "Monday – Thursday – Friday": "الاثنين – الخميس – الجمعة",
+              "Sunday - Wednesday": "الأحد - الأربعاء",
+              "Thursday - Saturday": "الخميس - السبت",
+              "Monday - Wednesday": "الاثنين - الأربعاء",
+              "Saturday – Wednesday": "السبت – الأربعاء",
+            };
+            displayDay = dayMap[schedule.day] || schedule.day;
+          }
+
+          const displayText = `${displayDay} (${schedule.time})`;
           availableTimes.add(
             JSON.stringify({
               text: displayText,
@@ -578,6 +767,19 @@ document.addEventListener("DOMContentLoaded", function () {
       li.appendChild(a);
       timeDropdownMenu.appendChild(li);
     });
+
+    // If no times available, show message
+    if (availableTimes.size === 0) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.classList.add("dropdown-item");
+      a.href = "#";
+      a.textContent = isArabic ? "لا توجد أوقات متاحة" : "No available times";
+      a.style.color = "#6c757d";
+      a.style.cursor = "not-allowed";
+      li.appendChild(a);
+      timeDropdownMenu.appendChild(li);
+    }
   }
 
   // Initialize dropdowns
@@ -817,4 +1019,3 @@ document.addEventListener("DOMContentLoaded", function () {
     mixer.filter("all");
   }
 });
- 
